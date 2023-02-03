@@ -7,15 +7,19 @@ using TMPro;
 
 public class LoginPanelUI : MonoBehaviour
 {
+    [SerializeField] private TextMeshProUGUI _nameText;
+
     [SerializeField] private Button _connectionButton;
-    [SerializeField] private TextMeshProUGUI _text;
+    [SerializeField] private TextMeshProUGUI _buttonConnectionText;
+
     [SerializeField] private Button _disconnectionButton;
 
 
-    public void Init(UnityAction action)
+    public void Init(UnityAction action, string nameText)
     {
         _connectionButton.onClick.AddListener(action);
         _connectionButton.gameObject.SetActive(true);
+        _nameText.text = nameText;
     }
 
     public void InitDisconnect(UnityAction action)
@@ -27,7 +31,7 @@ public class LoginPanelUI : MonoBehaviour
     public void ChangeButtonView(Color color, string text)
     {
         _connectionButton.image.color = color;
-        _text.text = text;
+        _buttonConnectionText.text = text;
     }
 
     private void OnDestroy()

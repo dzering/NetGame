@@ -3,27 +3,35 @@ using System.Collections.Generic;
 using UnityEngine;
 using PlayFabClient;
 
+
 public class Root : MonoBehaviour
 {
-    [SerializeField] private LoginPanelUI _panelView;
-    [SerializeField] private PlayFabLogin _playFabLogin;
+    [SerializeField] private PlayFabLauncher _playFab;
+    [SerializeField] private LoginPanelUI _playFabPanelUI;
+
+    [SerializeField] private LoginPanelUI _photonPanelUI;
     [SerializeField] private PhotonLauncher _photon;
 
-    private LoginPanel _loginPanel;
+    private LoginPanel _playFabPanel;
+    private LoginPanel _photonPanel;
 
     private void Start()
     {
-        _loginPanel = new LoginPanel(_panelView);
+        _playFabPanel = new LoginPanel(_playFabPanelUI, "PlayFab");
+        _photonPanel = new LoginPanel(_photonPanelUI, "Photon");
 
-        _loginPanel.onConnect += _playFabLogin.Login;
-        _loginPanel.onDisconnect += _photon.Disconnect;
+        _playFabPanel.onConnect += _playFab.Login;
 
-        _playFabLogin.OnLogin += _loginPanel.UpdateStatus;
+        _photonPanel.onConnect += _photon.Connect;
+        _photonPanel.onDisconnect+= _photon.Disconnect;
+
+        _playFab.OnLogin += _playFabPanel.UpdateStatus;
     }
 
     private void OnDestroy()
     {
-        _loginPanel.onConnect -= _playFabLogin.Login;
-        _loginPanel.onConnect -= _photon.Disconnect;
+        _playFabPanel.onConnect -= _playFab.Login;
+        _photonPanel.onConnect -= _photon.Connect;
+        _photonPanel.onDisconnect -= _photon.Disconnect;
     }
 }

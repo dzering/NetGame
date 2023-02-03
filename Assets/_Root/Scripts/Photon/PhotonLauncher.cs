@@ -16,10 +16,10 @@ public class PhotonLauncher : MonoBehaviourPunCallbacks
 
     private void Start()
     {
-        Connect();
+        
     }
 
-    private void Connect()
+    public void Connect()
     {
         if (PhotonNetwork.IsConnected)
             PhotonNetwork.JoinRandomRoom();

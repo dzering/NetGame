@@ -13,11 +13,11 @@ namespace PlayFabClient
 
         private LoginPanelUI _panelView;
 
-        public LoginPanel(LoginPanelUI panelView)
+        public LoginPanel(LoginPanelUI panelView, string panelName)
         {
             _panelView = panelView;
-            _panelView.Init(Connect);
-            _panelView.InitDisconnect(Disconnect);
+            _panelView.Init(Connect, panelName);
+           // _panelView.InitDisconnect(Disconnect);
             _panelView.gameObject.SetActive(true);
         }
 
@@ -30,7 +30,6 @@ namespace PlayFabClient
         {
             onDisconnect?.Invoke();
         }
-
 
         public void UpdateStatus(bool isSuccess)
         {

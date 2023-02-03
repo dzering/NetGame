@@ -5,7 +5,7 @@ using PlayFab;
 using PlayFab.ClientModels;
 using System;
 
-public class PlayFabLogin : MonoBehaviour
+public class PlayFabLauncher : MonoBehaviour
 {
     public event Action<bool> OnLogin;
 
