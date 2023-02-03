@@ -9,8 +9,8 @@ public class Root : MonoBehaviour
     [SerializeField] private PlayFabLauncher _playFab;
     [SerializeField] private LoginPanelUI _playFabPanelUI;
 
-    [SerializeField] private LoginPanelUI _photonPanelUI;
     [SerializeField] private PhotonLauncher _photon;
+    [SerializeField] private LoginPanelUI _photonPanelUI;
 
     private LoginPanel _playFabPanel;
     private LoginPanel _photonPanel;
@@ -26,6 +26,7 @@ public class Root : MonoBehaviour
         _photonPanel.onDisconnect+= _photon.Disconnect;
 
         _playFab.OnLogin += _playFabPanel.UpdateStatus;
+        _photon.onConnection += _photonPanel.UpdateStatus;
     }
 
     private void OnDestroy()
@@ -33,5 +34,6 @@ public class Root : MonoBehaviour
         _playFabPanel.onConnect -= _playFab.Login;
         _photonPanel.onConnect -= _photon.Connect;
         _photonPanel.onDisconnect -= _photon.Disconnect;
+        _photon.onConnection -= _photonPanel.UpdateStatus;
     }
 }

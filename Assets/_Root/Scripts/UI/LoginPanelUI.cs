@@ -7,7 +7,7 @@ using TMPro;
 
 public class LoginPanelUI : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI _nameText;
+    [SerializeField] private TextMeshProUGUI _panelNameText;
 
     [SerializeField] private Button _connectionButton;
     [SerializeField] private TextMeshProUGUI _buttonConnectionText;
@@ -15,11 +15,11 @@ public class LoginPanelUI : MonoBehaviour
     [SerializeField] private Button _disconnectionButton;
 
 
-    public void Init(UnityAction action, string nameText)
+    public void Init(UnityAction action, string panelNameText)
     {
         _connectionButton.onClick.AddListener(action);
         _connectionButton.gameObject.SetActive(true);
-        _nameText.text = nameText;
+        _panelNameText.text = panelNameText;
     }
 
     public void InitDisconnect(UnityAction action)

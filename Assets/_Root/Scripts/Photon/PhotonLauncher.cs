@@ -7,6 +7,7 @@ using Photon.Realtime;
 
 public class PhotonLauncher : MonoBehaviourPunCallbacks
 {
+    public event Action<bool> onConnection;
     private string gameVersion = "1";
 
     private void Awake()
@@ -22,7 +23,9 @@ public class PhotonLauncher : MonoBehaviourPunCallbacks
     public void Connect()
     {
         if (PhotonNetwork.IsConnected)
+        {
             PhotonNetwork.JoinRandomRoom();
+        }
         else
         {
             PhotonNetwork.ConnectUsingSettings();
@@ -40,5 +43,17 @@ public class PhotonLauncher : MonoBehaviourPunCallbacks
     {
         base.OnConnectedToMaster();
         Debug.Log("Connect to master was complited succesfull");
+    }
+
+    public override void OnConnected()
+    {
+        base.OnConnected();
+        onConnection?.Invoke(true);
+    }
+
+    public override void OnDisconnected(DisconnectCause cause)
+    {
+        base.OnDisconnected(cause);
+        onConnection?.Invoke(false);
     }
 }

@@ -17,7 +17,7 @@ namespace PlayFabClient
         {
             _panelView = panelView;
             _panelView.Init(Connect, panelName);
-           // _panelView.InitDisconnect(Disconnect);
+            _panelView.InitDisconnect(Disconnect);
             _panelView.gameObject.SetActive(true);
         }
 
