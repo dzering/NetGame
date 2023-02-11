@@ -18,7 +18,9 @@ public class PlayFabAccountManager : MonoBehaviour
 
     private void OnGetInfo(GetAccountInfoResult obj)
     {
-        _titleLable.text = $"Player id: {obj.AccountInfo.PlayFabId}";
+        _titleLable.text = $"Player id: {obj.AccountInfo.PlayFabId}\n" +
+            $"Username: {obj.AccountInfo.Username}\n" +
+            $"Created: {obj.AccountInfo.Created}";
     }
 
     private void OnError(PlayFabError obj)
