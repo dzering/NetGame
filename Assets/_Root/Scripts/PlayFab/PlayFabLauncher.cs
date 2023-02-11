@@ -7,24 +7,32 @@ using System;
 
 public class PlayFabLauncher : MonoBehaviour
 {
+    private const string AUTH_GUID_KEY = nameof(AUTH_GUID_KEY);
     public event Action<bool> OnLogin;
 
     private void Start()
     {
         if (string.IsNullOrEmpty(PlayFabSettings.staticSettings.TitleId))
             PlayFabSettings.staticSettings.TitleId = "AB304";
-
     }
 
     public void Login()
     {
+        var needCreate = PlayerPrefs.HasKey(AUTH_GUID_KEY);
+        var id = PlayerPrefs.GetString(AUTH_GUID_KEY, Guid.NewGuid().ToString());
+
         var request = new LoginWithCustomIDRequest
         {
-            CustomId = "Player01",
-            CreateAccount = true,
+            CustomId = id,
+            CreateAccount = !needCreate,
         };
 
-        PlayFabClientAPI.LoginWithCustomID(request, OnLoginSuccess, OnLoginError);
+        PlayFabClientAPI.LoginWithCustomID(request,
+            result =>
+            {
+                PlayerPrefs.SetString(AUTH_GUID_KEY, id);
+                OnLoginSuccess(result);
+            }, OnLoginError);
     }
 
     private void OnLoginSuccess(LoginResult obj)

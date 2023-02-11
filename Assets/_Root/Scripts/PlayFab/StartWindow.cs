@@ -28,12 +28,12 @@ public class StartWindow : MonoBehaviour
     private void OpenSignInWindow()
     {
         _signInCanvas.enabled= true;
-        _createAccountCanvas.enabled= false;
+        _startCanvas.enabled= false;
     }
 
     private void OpenCreateAccountWindow()
     {
-        _signInCanvas.enabled= false;
         _createAccountCanvas.enabled= true;
+        _startCanvas.enabled= false;
     }
 }

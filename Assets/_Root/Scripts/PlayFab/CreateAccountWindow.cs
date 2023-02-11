@@ -1,27 +1,34 @@
-using System;
+//using System;
 using UnityEngine;
 using UnityEngine.UI;
 using PlayFab;
 using PlayFabClient;
 using PlayFab.ClientModels;
 
+
 public class CreateAccountWindow : AccountWindowBase
 {
     [SerializeField] private InputField _emailField;
-    [SerializeField] private Button _createAccount;
+    [SerializeField] private Button _createAccountButton;
     
     private string _email;
+
+    private void Start()
+    {
+        SubscriptionElementsUI();
+    }
 
     protected override void SubscriptionElementsUI()
     {
         base.SubscriptionElementsUI();
 
         _emailField.onValueChanged.AddListener(UpdateEmail);
-        _createAccount.onClick.AddListener(CreateAccount);
+        _createAccountButton.onClick.AddListener(CreateAccount);
     }
 
     private void CreateAccount()
     {
+        Debug.Log("Create Account");
         var request = new RegisterPlayFabUserRequest {
             Email = _email,
             Password = _password,
@@ -29,15 +36,14 @@ public class CreateAccountWindow : AccountWindowBase
         };
 
         PlayFabClientAPI.RegisterPlayFabUser(
-            request,
-            result =>
+            request, result =>
             {
+                EnterInGameScene();
                 Debug.Log($"Success: {_userName}");
-            },
-                error =>
-                {
-                    Debug.Log($"Fail: {error.ErrorMessage}");
-                });
+            }, error =>
+            {
+                Debug.Log($"Fail: {error.ErrorMessage}");
+            });
     }
 
     private void UpdateEmail(string email)

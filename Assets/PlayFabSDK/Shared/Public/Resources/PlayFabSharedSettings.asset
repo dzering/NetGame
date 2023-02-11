@@ -15,7 +15,7 @@ MonoBehaviour:
   TitleId: AB304
   DeveloperSecretKey: I55EFOREPKNMRCS447XRENUTNQ4PB3QNE3GF4TQKI149CDGDY7
   ProductionEnvironmentUrl: 
-  RequestType: 2
+  RequestType: 0
   DisableDeviceInfo: 0
   DisableFocusTimeCollection: 0
   RequestTimeout: 2000

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class AccountWindowBase : MonoBehaviour
@@ -18,6 +19,8 @@ public class AccountWindowBase : MonoBehaviour
         _passwordField.onValueChanged.AddListener(UpdatePassword);
     }
 
+    protected virtual void Back() { }
+
     private void UpdatePassword(string password)
     {
         _password = password;
@@ -27,4 +30,10 @@ public class AccountWindowBase : MonoBehaviour
     {
         _userName = userName;
     }
+
+    protected void EnterInGameScene()
+    {
+        SceneManager.LoadScene(1);
+    }
+
 }
