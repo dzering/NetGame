@@ -7,6 +7,9 @@ using UnityEngine.UI;
 
 public class AccountWindowBase : MonoBehaviour
 {
+    public Action OnLoadingStarted;
+    public Action<bool> OnLoadingFinished;
+
     [SerializeField] private InputField _userNameField;
     [SerializeField] private InputField _passwordField;
 
@@ -34,6 +37,11 @@ public class AccountWindowBase : MonoBehaviour
     protected void EnterInGameScene()
     {
         SceneManager.LoadScene(1);
+    }
+
+    private void OnDestroy()
+    {
+        Debug.Log($"Destroied");
     }
 
 }

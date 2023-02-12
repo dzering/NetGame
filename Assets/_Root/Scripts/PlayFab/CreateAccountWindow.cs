@@ -28,7 +28,7 @@ public class CreateAccountWindow : AccountWindowBase
 
     private void CreateAccount()
     {
-        Debug.Log("Create Account");
+        OnLoadingStarted?.Invoke();
         var request = new RegisterPlayFabUserRequest {
             Email = _email,
             Password = _password,
@@ -38,10 +38,12 @@ public class CreateAccountWindow : AccountWindowBase
         PlayFabClientAPI.RegisterPlayFabUser(
             request, result =>
             {
+                OnLoadingStarted?.Invoke();
                 EnterInGameScene();
                 Debug.Log($"Success: {_userName}");
             }, error =>
             {
+                OnLoadingFinished?.Invoke(false);
                 Debug.Log($"Fail: {error.ErrorMessage}");
             });
     }

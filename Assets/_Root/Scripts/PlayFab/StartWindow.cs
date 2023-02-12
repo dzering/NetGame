@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,7 +16,7 @@ public class StartWindow : MonoBehaviour
         Init();
     }
 
-    public void Init()
+    private void Init()
     {
         _createAccountButton.onClick.AddListener(OpenCreateAccountWindow);
         _signInButton.onClick.AddListener(OpenSignInWindow);

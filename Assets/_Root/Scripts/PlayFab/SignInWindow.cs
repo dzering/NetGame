@@ -23,6 +23,8 @@ public class SignInWindow : AccountWindowBase
 
     private void SignIn()
     {
+        OnLoadingStarted?.Invoke();
+        Debug.Log("SignIn is started");
         var request = new LoginWithPlayFabRequest()
         {
             Username = _userName,
@@ -33,10 +35,11 @@ public class SignInWindow : AccountWindowBase
             request,
             result =>
             {
-                EnterInGameScene();
                 Debug.Log($"Success: {_userName}");
+                EnterInGameScene();
             }, error =>
             {
+                OnLoadingFinished(false);
                 Debug.LogError($"Fail: {error}");
             }
             );
