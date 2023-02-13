@@ -1,0 +1,216 @@
+{
+  "CatalogVersion": "MyGame 1.0",
+  "Catalog": [
+    {
+      "ItemId": "pistol_beretta92_id",
+      "ItemClass": "pistol",
+      "CatalogVersion": "MyGame 1.0",
+      "DisplayName": "Beretta 92",
+      "Description": "The Beretta 92 (also Beretta 96 and Beretta 98) is a series of semi-automatic pistols designed and manufactured by Beretta of Italy. \n\nThe Beretta 92's open slide design ensures smooth feeding and ejection of ammunition and allows easy clearing of obstructions.",
+      "VirtualCurrencyPrices": {
+        "RM": 1
+      },
+      "RealCurrencyPrices": {},
+      "Tags": [
+        "\"pistol",
+        "weapon",
+        "rate weapon\""
+      ],
+      "CustomData": null,
+      "Consumable": {
+        "UsageCount": null,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": null,
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": true,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": false,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    },
+    {
+      "ItemId": "pistol_m1911_id",
+      "ItemClass": "pistol",
+      "CatalogVersion": "MyGame 1.0",
+      "DisplayName": "M1911 pistol",
+      "Description": "The M1911 (Colt 1911 or Colt Government) is a single-action, recoil-operated, semi-automatic pistol chambered for the .45 ACP cartridge.[9] The pistol's formal U.S. military designation as of 1940 was Automatic Pistol, Caliber .45, M1911 for the original model adopted in March 1911, and Automatic Pistol, Caliber .45, M1911A1 for the improved M1911A1 model which entered service in 1926.",
+      "VirtualCurrencyPrices": {
+        "RM": 1
+      },
+      "RealCurrencyPrices": null,
+      "Tags": [
+        "\"pistol",
+        "weapon",
+        "light weapon\""
+      ],
+      "CustomData": null,
+      "Consumable": {
+        "UsageCount": null,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": null,
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": false,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": false,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    },
+    {
+      "ItemId": "bundle_startbundle_id",
+      "ItemClass": null,
+      "CatalogVersion": "MyGame 1.0",
+      "DisplayName": "Start bundle",
+      "Description": null,
+      "VirtualCurrencyPrices": {},
+      "RealCurrencyPrices": null,
+      "Tags": [],
+      "CustomData": null,
+      "Consumable": {
+        "UsageCount": 1,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": {
+        "BundledItems": [
+          "pistol_m1911_id"
+        ],
+        "BundledResultTables": [],
+        "BundledVirtualCurrencies": null
+      },
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": false,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": false,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    },
+    {
+      "ItemId": "container_small_green_l1_id",
+      "ItemClass": "conteiner",
+      "CatalogVersion": "MyGame 1.0",
+      "DisplayName": "Small green box",
+      "Description": null,
+      "VirtualCurrencyPrices": {
+        "RM": 1
+      },
+      "RealCurrencyPrices": null,
+      "Tags": [
+        "\"conteiner",
+        "small",
+        "red\""
+      ],
+      "CustomData": null,
+      "Consumable": {
+        "UsageCount": 1,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": {
+        "KeyItemId": null,
+        "ItemContents": [
+          "pistol_beretta92_id"
+        ],
+        "ResultTableContents": [],
+        "VirtualCurrencyContents": null
+      },
+      "Bundle": null,
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": true,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": true,
+      "InitialLimitedEditionCount": 10,
+      "ActivatedMembership": null
+    },
+    {
+      "ItemId": "rifle_mosin_id",
+      "ItemClass": "rifle",
+      "CatalogVersion": "MyGame 1.0",
+      "DisplayName": "Mosin–Nagant",
+      "Description": "The Mosin–Nagant is a five-shot, bolt-action, internal magazine–fed military rifle.",
+      "VirtualCurrencyPrices": {
+        "GD": 100,
+        "CR": 2
+      },
+      "RealCurrencyPrices": null,
+      "Tags": [
+        "\"weapon",
+        "rifle\""
+      ],
+      "CustomData": null,
+      "Consumable": {
+        "UsageCount": null,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": null,
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": true,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": false,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    },
+    {
+      "ItemId": "7.62×54_id",
+      "ItemClass": "ammunition",
+      "CatalogVersion": "MyGame 1.0",
+      "DisplayName": "7.62×54",
+      "Description": "The 7.62×54mmR is a rimmed rifle cartridge developed by the Russian Empire and introduced as a service cartridge in 1891.",
+      "VirtualCurrencyPrices": {},
+      "RealCurrencyPrices": {},
+      "Tags": [
+        "\"ammunition\""
+      ],
+      "CustomData": null,
+      "Consumable": {
+        "UsageCount": 10,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": null,
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": true,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": false,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    }
+  ],
+  "DropTables": [
+    {
+      "TableId": "table_red_id",
+      "Nodes": [
+        {
+          "ResultItemType": "ItemId",
+          "ResultItem": "pistol_m1911_id",
+          "Weight": 1
+        },
+        {
+          "ResultItemType": "ItemId",
+          "ResultItem": "bundle_startbundle_id",
+          "Weight": 1
+        },
+        {
+          "ResultItemType": "ItemId",
+          "ResultItem": "container_small_green_l1_id",
+          "Weight": 1
+        }
+      ]
+    }
+  ]
+}
