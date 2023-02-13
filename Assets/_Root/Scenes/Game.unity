@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3826f520dcf2b416181ca750b63be254, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _titleLable: {fileID: 1612470692}
+  titleText: {fileID: 1612470692}
 --- !u!114 &91973030
 MonoBehaviour:
   m_ObjectHideFlags: 0
