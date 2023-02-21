@@ -14,11 +14,7 @@ public class PhotonLauncher : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.AutomaticallySyncScene = true;
     }
-
-    private void Start()
-    {
-        
-    }
+    
 
     public void Connect()
     {
