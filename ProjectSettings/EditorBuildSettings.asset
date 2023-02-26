@@ -11,7 +11,20 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/_Root/Scenes/Game.unity
     guid: ba2e3df77dfdb4f76b07bd5106704a3e
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Root/Scenes/Lesson6_HomeTasks.unity
     guid: 82539ffd503194407a6e9ffdd1332bcb
+  - enabled: 1
+    path: Assets/_MyGame/Scenes/GameLauncher.unity
+    guid: 19aa32a8bd5894c8dace0454678d9341
+  - enabled: 1
+    path: Assets/MetroidvaniaController/Scenes/Demo.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/_MyGame/Scenes/Level_01.unity
+    guid: 5c80869addb6940c0958b6a035af7381
+  - enabled: 1
+    path: Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Scenes/PunBasics-Room
+      for 1.unity
+    guid: 9b8561c6e396849a5ba48c3eb9524049
   m_configObjects: {}
