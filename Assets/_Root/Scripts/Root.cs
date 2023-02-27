@@ -6,7 +6,7 @@ using PlayFabClient;
 
 public class Root : MonoBehaviour
 {
-    [SerializeField] private PlayFabLauncher _playFab;
+    [SerializeField] private PlayFabLauncherAnonymus _playFab;
     [SerializeField] private LoginPanelUI _playFabPanelUI;
 
     [SerializeField] private PhotonLauncher _photon;

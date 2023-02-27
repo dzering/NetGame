@@ -32,6 +32,7 @@ public class Attack : MonoBehaviourPun
     {
 	    if (photonView.IsMine == false) ;
 		    return;
+		    
 		if (Input.GetKeyDown(KeyCode.X) && canAttack)
 		{
 			canAttack = false;

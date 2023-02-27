@@ -5,7 +5,10 @@
         "PhotonRealtime",
         "PhotonUnityNetworking",
         "Unity.TextMeshPro",
-        "Unity.TextMeshPro.Editor"
+        "Unity.TextMeshPro.Editor",
+        "PlayFab",
+        "PlayFabSDKEditor",
+        "PlayFabEditorExtensions"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

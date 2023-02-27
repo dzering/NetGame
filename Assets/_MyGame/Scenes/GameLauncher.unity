@@ -769,6 +769,146 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &998706922
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 998706924}
+  - component: {fileID: 998706923}
+  m_Layer: 0
+  m_Name: PlayFab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &998706923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998706922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acf7fd7b4ff1e41d39d14d85ade3b782, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LoginResult:
+    EntityToken:
+      Entity:
+        Id: 
+        Type: 
+      EntityToken: 
+    InfoResultPayload:
+      AccountInfo:
+        AndroidDeviceInfo:
+          AndroidDeviceId: 
+        AppleAccountInfo:
+          AppleSubjectId: 
+        CustomIdInfo:
+          CustomId: 
+        FacebookInfo:
+          FacebookId: 
+          FullName: 
+        FacebookInstantGamesIdInfo:
+          FacebookInstantGamesId: 
+        GameCenterInfo:
+          GameCenterId: 
+        GoogleInfo:
+          GoogleEmail: 
+          GoogleGender: 
+          GoogleId: 
+          GoogleLocale: 
+          GoogleName: 
+        GooglePlayGamesInfo:
+          GooglePlayGamesPlayerAvatarImageUrl: 
+          GooglePlayGamesPlayerDisplayName: 
+          GooglePlayGamesPlayerId: 
+        IosDeviceInfo:
+          IosDeviceId: 
+        KongregateInfo:
+          KongregateId: 
+          KongregateName: 
+        NintendoSwitchAccountInfo:
+          NintendoSwitchAccountSubjectId: 
+        NintendoSwitchDeviceIdInfo:
+          NintendoSwitchDeviceId: 
+        OpenIdInfo: []
+        PlayFabId: 
+        PrivateInfo:
+          Email: 
+        PsnInfo:
+          PsnAccountId: 
+          PsnOnlineId: 
+        SteamInfo:
+          SteamCountry: 
+          SteamId: 
+          SteamName: 
+        TitleInfo:
+          AvatarUrl: 
+          DisplayName: 
+          TitlePlayerAccount:
+            Id: 
+            Type: 
+        TwitchInfo:
+          TwitchId: 
+          TwitchUserName: 
+        Username: 
+        XboxInfo:
+          XboxUserId: 
+          XboxUserSandbox: 
+      CharacterInventories: []
+      CharacterList: []
+      PlayerProfile:
+        AdCampaignAttributions: []
+        AvatarUrl: 
+        ContactEmailAddresses: []
+        DisplayName: 
+        ExperimentVariants: []
+        LinkedAccounts: []
+        Locations: []
+        Memberships: []
+        PlayerId: 
+        PublisherId: 
+        PushNotificationRegistrations: []
+        Statistics: []
+        Tags: []
+        TitleId: 
+        ValuesToDate: []
+      PlayerStatistics: []
+      UserDataVersion: 0
+      UserInventory: []
+      UserReadOnlyDataVersion: 0
+    NewlyCreated: 0
+    PlayFabId: 
+    SessionTicket: 
+    SettingsForUser:
+      GatherDeviceInfo: 0
+      GatherFocusInfo: 0
+      NeedsAttribution: 0
+    TreatmentAssignment:
+      Variables: []
+      Variants: []
+--- !u!4 &998706924
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998706922}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1075140189
 GameObject:
   m_ObjectHideFlags: 0

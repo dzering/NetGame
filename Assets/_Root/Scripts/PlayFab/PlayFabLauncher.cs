@@ -1,50 +1,36 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using PlayFab;
-using PlayFab.ClientModels;
-using System;
+using UnityEngine.UI;
+
 
 public class PlayFabLauncher : MonoBehaviour
 {
-    private const string AUTH_GUID_KEY = nameof(AUTH_GUID_KEY);
-    public event Action<bool> OnLogin;
+    [SerializeField] private Button _createAccountButton;
+    [SerializeField] private Button _signInButton;
+
+    [SerializeField] private Canvas _startCanvas;
+    [SerializeField] private Canvas _createAccountCanvas;
+    [SerializeField] private Canvas _signInCanvas;
 
     private void Start()
     {
-        if (string.IsNullOrEmpty(PlayFabSettings.staticSettings.TitleId))
-            PlayFabSettings.staticSettings.TitleId = "AB304";
+        Init();
     }
 
-    public void Login()
+    private void Init()
     {
-        var needCreate = PlayerPrefs.HasKey(AUTH_GUID_KEY);
-        var id = PlayerPrefs.GetString(AUTH_GUID_KEY, Guid.NewGuid().ToString());
-
-        var request = new LoginWithCustomIDRequest
-        {
-            CustomId = id,
-            CreateAccount = !needCreate,
-        };
-
-        PlayFabClientAPI.LoginWithCustomID(request,
-            result =>
-            {
-                PlayerPrefs.SetString(AUTH_GUID_KEY, id);
-                OnLoginSuccess(result);
-            }, OnLoginError);
+        _createAccountButton.onClick.AddListener(OpenCreateAccountWindow);
+        _signInButton.onClick.AddListener(OpenSignInWindow);
     }
 
-    private void OnLoginSuccess(LoginResult obj)
+    private void OpenSignInWindow()
     {
-        OnLogin?.Invoke(true);
-        Debug.Log("Success.");
+        _signInCanvas.enabled= true;
+        _startCanvas.enabled= false;
     }
 
-    private void OnLoginError(PlayFabError obj)
+    private void OpenCreateAccountWindow()
     {
-        var message = obj.GenerateErrorReport();
-        Debug.LogError($"Something went wrong: {message}");
-        OnLogin?.Invoke(false);
+        _createAccountCanvas.enabled= true;
+        _startCanvas.enabled= false;
     }
 }

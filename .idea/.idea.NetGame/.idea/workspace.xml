@@ -2,14 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5174a89f-b7b0-4e14-a280-56ef3958b627" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/ControlPanelUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/ControlPanelUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Root/Scripts/PlayFab/PlayFabLauncherAnonymus.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NetGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NetGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Resources/My Robot Kyle -done-.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Resources/My Robot Kyle -done-.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Root/Scripts/Photon/PhotonLauncherLB.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Root/Scripts/Photon/PhotonLauncherLB.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Player/Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Player/Attack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Resources/DrawCharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Resources/DrawCharacter.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scenes/GameLauncher.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scenes/GameLauncher.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scenes/Level_01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scenes/Level_01.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Launcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Launcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/_MyGame.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/_MyGame.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Root/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Root/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Root/Scripts/PlayFab/PlayFabLauncher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Root/Scripts/PlayFab/PlayFabLauncher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Root/Scripts/PlayFab/PlayFabLauncher.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Root/Scripts/PlayFab/PlayFabLauncher.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Root/Scripts/PlayFab/StartWindow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Root/Scripts/PlayFab/StartWindow.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Root/Scripts/PlayFab/PlayFabLauncherAnonymus.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Root/Scripts/Root.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Root/Scripts/Root.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +28,11 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b360d844ccb2496b82768a99bc8c7dcb15d800/dc/553d0f78/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../CCity/Assets/Code/CCity_56/Fortuity.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../CCity/Assets/Code/Controllers/City/CityManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/Initializer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/Launcher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/PlayFab/PlayFabLogin.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/PlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/TransferData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Root/Scripts/EntryPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Root/Scripts/Photon/ItemContent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_Text.cs" root0="SKIP_HIGHLIGHTING" />
@@ -84,10 +95,10 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="14636">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="14636" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -128,6 +139,7 @@
       <workItem from="1677308661323" duration="5655000" />
       <workItem from="1677325388469" duration="5219000" />
       <workItem from="1677403770070" duration="4133000" />
+      <workItem from="1677485562933" duration="13400000" />
     </task>
     <servers />
   </component>

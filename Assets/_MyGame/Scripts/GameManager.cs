@@ -43,7 +43,6 @@ public class GameManager : MonoBehaviourPunCallbacks
             if (PlayerManager.LocalPlayerInstance == null)
             {
                PhotonNetwork.Instantiate(_playerPrefab.name, new Vector3(0f,5f,0f), Quaternion.identity, 0);
-               
             }
         }
     }
