@@ -10,7 +10,7 @@ using UnityEditor;
 public class PlayFabLogin : TransferData
 {
     public static PlayFabLogin Instance;
-    public LoginResult LoginResult;
+    [HideInInspector] public LoginResult LoginResult;
     
     private const string AUTH_GUID_KEY = "AUTH_GUID_KEY";
     private string _id;
