@@ -4,7 +4,7 @@ using UnityEngine;
 using PlayFabClient;
 
 
-public class Root : MonoBehaviour
+public class StartRoot : MonoBehaviour
 {
     [SerializeField] private PlayFabLauncherAnonymus _playFab;
     [SerializeField] private LoginPanelUI _playFabPanelUI;

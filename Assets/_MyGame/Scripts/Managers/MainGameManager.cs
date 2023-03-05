@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class MainGameManager : MonoBehaviour
 {
+    private GameModel _gameModel;
     [SerializeField] private GameObject enemyForMainMenu;
     [SerializeField] private MainMenuUI _mainMenuUI;
     [SerializeField] private SettingMenuUI _settingMenuUI;
@@ -21,11 +22,11 @@ public class MainGameManager : MonoBehaviour
     private void Initialize()
     {
         _gameSetting = new GameSetting();
-        GameStateManager = new GameStateManager(_gameSetting);
-        GameStateManager.CurrentState = GameState.None;
+        // GameStateManager = new GameStateManager(_gameSetting);
+        // GameStateManager.CurrentState = GameState.None;
         
-        _settingMenu = new SettingMenu(_settingMenuUI, _gameSetting.SoundData);
-        _mainMenu = new MainMenu(_mainMenuUI, enemyForMainMenu);
+        //_settingMenu = new SettingMenu(_settingMenuUI, _gameSetting.SoundData);
+        //_mainMenu = new MainMenu(_mainMenuUI, enemyForMainMenu);
 
         _saveDataRepository = new SaveDataRepository();
         

@@ -1,25 +1,32 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.Plastic.Newtonsoft.Json.Serialization;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 public class MainMenu
 {
-    private readonly MainMenuUI _mainMenuUI;
-    private readonly GameObject[] _gameObjects;
+    private MainMenuUI _mainMenuUI;
+    private GameObject[] _gameObjects;
+    private readonly Context _context;
 
     /// <param name="gameObjects">Objects on the scene in Main menu that should be deactivate after close menu</param>
-    public MainMenu(MainMenuUI mainMenuUI, params GameObject[] gameObjects)
+    /// <param name="mainMenuUI">Prefab of UI. Should has a component MainMenuUI.cs</param>
+    public MainMenu(Context context, GameObject mainMenuUI, params GameObject[] gameObjects)
     {
-        _mainMenuUI = mainMenuUI;
-        _mainMenuUI.Init(OpenSettingMenu, StartGame, CloseApplication);
-        _gameObjects = gameObjects;
-
-        GameStateManager.Instance.OnSettingMenu += TurnOffMainMenu;
-        GameStateManager.Instance.OnMainMenu += TurnOnMainMenu;
+        _context = context;
+        Init(context.PlaceForUI, mainMenuUI, gameObjects);
     }
 
+    private void Init(Transform placeForUI, GameObject prefabMainMenuUI, GameObject[] gameObjects)
+    {
+        var go = Object.Instantiate(prefabMainMenuUI, placeForUI);
+        go.SetActive(true);
+        
+        if(!go.TryGetComponent(out _mainMenuUI))
+            return;
+
+        _mainMenuUI.Init(OpenSettingMenu, StartGame, CloseApplication);
+        _gameObjects = gameObjects;
+    }
+    
     public void TurnOffMainMenu()
     {
         foreach (var item in _gameObjects)
@@ -40,7 +47,7 @@ public class MainMenu
 
     public void StartGame()
     {
-        GameStateManager.Instance.CurrentState = GameState.StartGame;
+        Debug.Log("Start Game");
     }
 
     public void CloseApplication()
@@ -50,7 +57,8 @@ public class MainMenu
 
     public void OpenSettingMenu()
     {
-        GameStateManager.Instance.CurrentState = GameState.SettingMenu;
+        Debug.Log("Setting Menu");
+        _context.GameModel.CurrentState = GameState.SettingMenu;
     }
 
     public void UpdateInfo(string text)

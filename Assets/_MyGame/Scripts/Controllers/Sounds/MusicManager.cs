@@ -13,7 +13,7 @@ public class MusicManager : MonoBehaviour
 
     public void Play()
     {
-        _soundData = GameStateManager.Instance.GameSetting.SoundData;
+        //_soundData = GameStateManager.Instance.GameSetting.SoundData;
         _audioSource.Play();
     }
 

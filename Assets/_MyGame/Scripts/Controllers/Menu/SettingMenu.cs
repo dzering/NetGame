@@ -3,21 +3,36 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Plastic.Newtonsoft.Json.Serialization;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 public class SettingMenu
 {
     public event Action<SoundDataSetting> OnCloseSettingMenu;
-    private readonly SettingMenuUI _settingMenuUI;
-    private readonly SoundDataSetting _soundData;
+    private SettingMenuUI _settingMenuUI;
+    private SoundDataSetting _soundData;
 
-    public SettingMenu(SettingMenuUI settingMenuUI, SoundDataSetting soundData)
+    private Context _context;
+
+    public SettingMenu(Context context, SoundDataSetting soundData)
     {
-        _settingMenuUI = settingMenuUI;
-        _soundData = soundData;
-        
-        _settingMenuUI.Init(MusicOnOff, ChangeVolume, BackToMainMenu);
-        GameStateManager.Instance.OnSettingMenu += OpenSettingMenu;
+        Init(context, soundData);
+        // GameStateManager.Instance.OnSettingMenu += OpenSettingMenu;
     }
+
+    private void Init(Context context, SoundDataSetting soundData)
+    {
+        _context = context;
+        _soundData = soundData;
+
+        var go = Object.Instantiate(_context.UISO.SettingMenuGo, _context.PlaceForUI);
+        go.SetActive(true);
+
+        if (!go.TryGetComponent(out _settingMenuUI))
+            return;
+
+        _settingMenuUI.Init(MusicOnOff, ChangeVolume, BackToMainMenu);
+    }
+
 
     public void OpenSettingMenu()
     {
@@ -29,7 +44,7 @@ public class SettingMenu
     public void BackToMainMenu()
     {
         _settingMenuUI.gameObject.SetActive(false);
-        GameStateManager.Instance.CurrentState = GameState.MainMenu;
+       // GameStateManager.Instance.CurrentState = GameState.MainMenu;
         OnCloseSettingMenu?.Invoke(_soundData);
     }
 
