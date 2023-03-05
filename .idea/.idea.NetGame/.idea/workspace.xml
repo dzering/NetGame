@@ -2,10 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5174a89f-b7b0-4e14-a280-56ef3958b627" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Utility.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Utility/Saving.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Utility/Saving/PlayerPrefsData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Utility/Saving/PlayerPrefsData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Utility/Saving/SaveDataRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Utility/Saving/SaveDataRepository.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Utility/Saving/SavedData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Utility/Saving/SavedData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Data/SoundDataSetting.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Data/SoundDataSetting.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NetGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NetGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/PlayFabLoginPref.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/PlayFabLoginPref.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scenes/GameLauncher.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scenes/GameLauncher.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/ControlPanelUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/ControlPanelUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/GameManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/GameManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Initializer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Initializer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Launcher.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Launcher.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/MusicManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/MusicManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/PlayFab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/PlayFab/CreateNewCharacterPanelUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/PlayFab/CreateNewCharacterPanelUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/PlayFab/PlayFabCharacterManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/PlayFab/PlayFabCharacterManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/PlayFab/PlayFabLogin.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/PlayFab/PlayFabLogin.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/PlayFab/SlotCharacterUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/PlayFab/SlotCharacterUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/PlayerManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/PlayerManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/TransferData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/TransferData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/UI/MainMenuUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/UI/MainMenuUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,16 +50,16 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b360d844ccb2496b82768a99bc8c7dcb15d800/dc/553d0f78/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../CCity/Assets/Code/CCity_56/Fortuity.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../CCity/Assets/Code/Controllers/City/CityManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/Initializer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/Launcher.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/MusicManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/PlayFab/CreateNewCharacterPanelUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/PlayFab/PlayFabLogin.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/PlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/TransferData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/GameStateManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/Data/GameSetting.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/Enum/GameState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/Interface/IData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/Managers/MainGameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/UI/SettingMenuUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Root/Scripts/EntryPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Root/Scripts/Photon/ItemContent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_Text.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Graphic.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/IMaskable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/MaskableGraphic.cs" root0="SKIP_HIGHLIGHTING" />
@@ -86,10 +119,10 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="30266">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="30266" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -134,7 +167,9 @@
       <workItem from="1677652289765" duration="313000" />
       <workItem from="1677652751659" duration="17229000" />
       <workItem from="1677824625281" duration="3976000" />
-      <workItem from="1677852680334" duration="1415000" />
+      <workItem from="1677852680334" duration="3009000" />
+      <workItem from="1677910604848" duration="9872000" />
+      <workItem from="1677937183046" duration="11349000" />
     </task>
     <servers />
   </component>
