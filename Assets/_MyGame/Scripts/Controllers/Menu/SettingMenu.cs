@@ -1,30 +1,23 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using _MyGame.Scripts.Controllers;
-using Unity.Plastic.Newtonsoft.Json.Serialization;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
 public class SettingMenu : BaseController
 {
-    public event Action<SoundDataSetting> OnCloseSettingMenu;
     private SettingMenuUI _settingMenuUI;
-    private SoundDataSetting _soundData;
+    private SoundModel _soundModel;
 
     private Context _context;
 
-    public SettingMenu(Context context, SoundDataSetting soundData)
-    {
-        Init(context, soundData);
-        // GameStateManager.Instance.OnSettingMenu += OpenSettingMenu;
-    }
-
-    private void Init(Context context, SoundDataSetting soundData)
+    public SettingMenu(Context context)
     {
         _context = context;
-        _soundData = soundData;
+        _soundModel = context.GameModel.SoundModel;
+        
+        Init(_soundModel);
+    }
 
+    private void Init(SoundModel soundModel)
+    {
         var go = Object.Instantiate(_context.UISO.SettingMenuGo, _context.PlaceForUI);
         go.SetActive(true);
 
@@ -33,6 +26,7 @@ public class SettingMenu : BaseController
 
         _settingMenuUI.Init(MusicOnOff, ChangeVolume, BackToMainMenu);
         AddGameObject(go);
+
     }
 
     public void BackToMainMenu()
@@ -40,13 +34,18 @@ public class SettingMenu : BaseController
         _context.GameModel.CurrentState = GameState.MainMenu;
     }
 
-    public void MusicOnOff(bool isMusic)
+    public void MusicOnOff(bool isMute)
     {
-        _soundData.IsMusicOn = isMusic;
+        _soundModel.IsMute = isMute;
     }
     
     public void ChangeVolume(float value)
     {
-        _soundData.MusicVolume = value;
+        _soundModel.VolumeMusic = value;
+    }
+
+    protected override void OnDispose()
+    {
+        base.OnDispose();
     }
 }

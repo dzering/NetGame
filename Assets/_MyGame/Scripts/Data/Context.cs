@@ -6,6 +6,8 @@
         [field: SerializeField] public UISO UISO { get; private set; }
         [field: SerializeField] public Transform PlaceForUI { get; private set; }
 
+        [SerializeField] private AudioSource _audioSource;
+
         private GameModel _gameGameModel;
 
         public GameModel GameModel
@@ -14,8 +16,11 @@
             set => _gameGameModel = value;
         }
 
+        public AudioSource Source => _audioSource;
+
         private void Awake()
         {
-            _gameGameModel = new GameModel();
+            var soundModel = new SoundModel();
+            _gameGameModel = new GameModel(soundModel);
         }
     }

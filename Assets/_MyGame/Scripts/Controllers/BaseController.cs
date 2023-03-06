@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace _MyGame.Scripts.Controllers
-{
     public abstract class BaseController : IDisposable
     {
         private bool _isDisposed;
@@ -57,4 +55,3 @@ namespace _MyGame.Scripts.Controllers
         
         protected virtual void OnDispose(){}
     }
-}

@@ -1,5 +1,4 @@
 using System;
-using _MyGame.Scripts.Controllers;
 
 public sealed class MainController : BaseController
 {
@@ -24,7 +23,7 @@ public sealed class MainController : BaseController
 
                 break;
             case GameState.SettingMenu:
-                _settingMenu = new SettingMenu(_context, new SoundDataSetting());
+                _settingMenu = new SettingMenu(_context);
 
                 break;
             case GameState.StartGame:

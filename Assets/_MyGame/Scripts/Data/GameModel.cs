@@ -3,7 +3,8 @@ public sealed class GameModel
 {
        public event Action<GameState> OnChangeGameState;
 
-       private GameState _currentState; 
+       private GameState _currentState;
+       private SoundModel _soundModel;
 
        public GameState CurrentState
        {
@@ -19,5 +20,15 @@ public sealed class GameModel
              
               }
        }
-       
+
+       public SoundModel SoundModel
+       {
+              get => _soundModel;
+              set => _soundModel = value;
+       }
+
+       public GameModel(SoundModel soundModel)
+       {
+              _soundModel = soundModel;
+       }
 }
