@@ -1,7 +1,8 @@
+using _MyGame.Scripts.Controllers;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-public class MainMenu
+public class MainMenu : BaseController
 {
     private MainMenuUI _mainMenuUI;
     private GameObject[] _gameObjects;
@@ -25,43 +26,32 @@ public class MainMenu
 
         _mainMenuUI.Init(OpenSettingMenu, StartGame, CloseApplication);
         _gameObjects = gameObjects;
-    }
-    
-    public void TurnOffMainMenu()
-    {
-        foreach (var item in _gameObjects)
+        
+        AddGameObject(go);
+        foreach (var gameObject in gameObjects)
         {
-            item.SetActive(false);
+            AddGameObject(gameObject);
         }
-        _mainMenuUI.gameObject.SetActive(false);
     }
 
-    public void TurnOnMainMenu()
-    {
-        foreach (var item in _gameObjects)
-        {
-            item.SetActive(true);
-        }
-        _mainMenuUI.gameObject.SetActive(true);
-    }
-
-    public void StartGame()
+    private void StartGame()
     {
         Debug.Log("Start Game");
     }
 
-    public void CloseApplication()
+    private void CloseApplication()
     {
         Application.Quit();
+        Debug.Log("Quit");
     }
 
-    public void OpenSettingMenu()
+    private void OpenSettingMenu()
     {
         Debug.Log("Setting Menu");
         _context.GameModel.CurrentState = GameState.SettingMenu;
     }
 
-    public void UpdateInfo(string text)
+    private void UpdateInfo(string text)
     {
         _mainMenuUI.UpdateInfoText(text);
     }

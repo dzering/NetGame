@@ -10,11 +10,12 @@ public sealed class GameModel
               get => _currentState;
               set
               {
-                     if (_currentState != value)
+                     if (_currentState == value)
                      {
-                            OnChangeGameState?.Invoke(value);
-                            _currentState = value;
+                            return;
                      }
+                     OnChangeGameState?.Invoke(value);
+                     _currentState = value;
              
               }
        }

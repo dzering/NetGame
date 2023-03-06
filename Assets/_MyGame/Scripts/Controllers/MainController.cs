@@ -1,6 +1,7 @@
 using System;
+using _MyGame.Scripts.Controllers;
 
-public sealed class MainController
+public sealed class MainController : BaseController
 {
     private readonly Context _context;
     private MainMenu _mainMenuController;
@@ -13,21 +14,37 @@ public sealed class MainController
 
     private void ChangeController(GameState state)
     {
+        DisposeChildObject();
         switch (state)
         {
             case GameState.None:
                 break;
             case GameState.MainMenu:
                 _mainMenuController = new MainMenu(_context, _context.UISO.MainMenuGo);
+
                 break;
             case GameState.SettingMenu:
                 _settingMenu = new SettingMenu(_context, new SoundDataSetting());
+
                 break;
             case GameState.StartGame:
                 break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(state), state, null);
         }
+    }
+
+    protected override void OnDispose()
+    {
+        base.OnDispose();
+        DisposeChildObject();
+        _context.GameModel.OnChangeGameState -= ChangeController;
+    }
+    
+    private void DisposeChildObject()
+    {
+        _settingMenu?.Dispose();
+        _mainMenuController?.Dispose();
     }
 
 }

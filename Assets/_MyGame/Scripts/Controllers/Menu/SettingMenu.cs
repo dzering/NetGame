@@ -1,11 +1,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using _MyGame.Scripts.Controllers;
 using Unity.Plastic.Newtonsoft.Json.Serialization;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-public class SettingMenu
+public class SettingMenu : BaseController
 {
     public event Action<SoundDataSetting> OnCloseSettingMenu;
     private SettingMenuUI _settingMenuUI;
@@ -31,31 +32,21 @@ public class SettingMenu
             return;
 
         _settingMenuUI.Init(MusicOnOff, ChangeVolume, BackToMainMenu);
-    }
-
-
-    public void OpenSettingMenu()
-    {
-        _settingMenuUI.gameObject.SetActive(true);
-        
-        _settingMenuUI.UpdateUI(_soundData.IsMusicOn, _soundData.MusicVolume);
+        AddGameObject(go);
     }
 
     public void BackToMainMenu()
     {
-        _settingMenuUI.gameObject.SetActive(false);
-       // GameStateManager.Instance.CurrentState = GameState.MainMenu;
-        OnCloseSettingMenu?.Invoke(_soundData);
+        _context.GameModel.CurrentState = GameState.MainMenu;
     }
 
     public void MusicOnOff(bool isMusic)
     {
         _soundData.IsMusicOn = isMusic;
     }
-
+    
     public void ChangeVolume(float value)
     {
         _soundData.MusicVolume = value;
     }
-
 }
