@@ -10,6 +10,11 @@ public class Root : MonoBehaviour
     { 
         _mainController = new MainController(_context);
         _soundController = new SoundController(_context);
+
+        _context.GameModel.SoundModel.OnChangeMute += _soundController.Mute;
+        _context.GameModel.SoundModel.OnChangeVolume += _soundController.ChangeVolume;
+        _context.SaveDataRepository.Load(_context.GameModel.SoundModel);
+        
         _context.GameModel.CurrentState = GameState.MainMenu;
     }
 }

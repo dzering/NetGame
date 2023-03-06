@@ -2,36 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5174a89f-b7b0-4e14-a280-56ef3958b627" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Sounds/SoundController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Data/SoundModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Data/SoundModel.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NetGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NetGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/BaseController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/BaseController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/GameStateManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/GameStateManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/MainController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/MainController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Menu/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Menu/MainMenu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Menu/SettingMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Menu/SettingMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Sounds/MusicManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Sounds/SoundController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Sounds/MusicManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Sounds/SoundController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Sounds/SoundController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Data/Context.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Data/Context.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Data/GameModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Data/GameModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Data/GameSetting.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Data/GameSetting.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Data/SoundDataSetting.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Data/SoundDataSetting.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Managers/MainGameManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Managers/MainGameManager.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Managers/Root.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Managers/Root.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/UI.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/View.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/UI/ControlPanelUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/View/ControlPanelUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/UI/ControlPanelUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/View/ControlPanelUI.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/UI/MainMenuUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/View/MainMenuUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/UI/MainMenuUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/View/MainMenuUI.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/UI/SettingMenuUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/View/SettingMenuUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/UI/SettingMenuUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/View/SettingMenuUI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Utility/Saving/PlayerPrefsData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Utility/Saving/PlayerPrefsData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Utility/Saving/SaveDataRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Utility/Saving/SaveDataRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +139,7 @@
       <workItem from="1677910604848" duration="9872000" />
       <workItem from="1677937183046" duration="22376000" />
       <workItem from="1678084178031" duration="3274000" />
-      <workItem from="1678092762913" duration="5134000" />
+      <workItem from="1678092762913" duration="7720000" />
     </task>
     <servers />
   </component>

@@ -14,6 +14,7 @@ public class SettingMenu : BaseController
         _soundModel = context.GameModel.SoundModel;
         
         Init(_soundModel);
+        UpdateUI(_context.GameModel.SoundModel);
     }
 
     private void Init(SoundModel soundModel)
@@ -31,6 +32,7 @@ public class SettingMenu : BaseController
 
     public void BackToMainMenu()
     {
+        _context.SaveDataRepository.Save(_soundModel);
         _context.GameModel.CurrentState = GameState.MainMenu;
     }
 
@@ -42,6 +44,11 @@ public class SettingMenu : BaseController
     public void ChangeVolume(float value)
     {
         _soundModel.VolumeMusic = value;
+    }
+
+    private void UpdateUI(SoundModel soundModel)
+    {
+        _settingMenuUI.UpdateUI(soundModel.IsMute, soundModel.VolumeMusic);
     }
 
     protected override void OnDispose()

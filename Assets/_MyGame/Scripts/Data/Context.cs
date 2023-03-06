@@ -9,6 +9,7 @@
         [SerializeField] private AudioSource _audioSource;
 
         private GameModel _gameGameModel;
+        [HideInInspector] public SaveDataRepository SaveDataRepository;
 
         public GameModel GameModel
         {
@@ -22,5 +23,7 @@
         {
             var soundModel = new SoundModel();
             _gameGameModel = new GameModel(soundModel);
+            SaveDataRepository = new SaveDataRepository();
+
         }
     }

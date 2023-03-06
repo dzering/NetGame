@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class PlayerPrefsData : IData<SavedData>
+public class PlayerPrefsData : IData<SoundModel>
 {
-    public void Save(SavedData data, string path = null)
+    public void Save(SoundModel data, string path = null)
     {
-        PlayerPrefs.SetFloat("Volume", data.Volume);
+        PlayerPrefs.SetFloat("Volume", data.VolumeMusic);
 
         var isMute = data.IsMute;
         PlayerPrefs.SetInt("IsMute", isMute ? 1 : 0);
@@ -12,12 +12,12 @@ public class PlayerPrefsData : IData<SavedData>
         PlayerPrefs.Save();
     }
 
-    public SavedData Load(string path = null)
+    public SoundModel Load(string path = null)
     {
-        var result = new SavedData();
+        var result = new SoundModel();
         var key = "Volume";
         if (PlayerPrefs.HasKey(key))
-            result.Volume = PlayerPrefs.GetFloat(key);
+            result.VolumeMusic = PlayerPrefs.GetFloat(key);
 
 
         key = "IsMute";

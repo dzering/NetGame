@@ -7,8 +7,8 @@ public sealed class SoundController : BaseController
     public SoundController(Context context)
     {
         _audioSource = context.Source;
-        context.GameModel.SoundModel.OnChangeVolume += ChangeVolume;
-        context.GameModel.SoundModel.OnChangeMute += Mute;
+        // context.GameModel.SoundModel.OnChangeVolume += ChangeVolume;
+        // context.GameModel.SoundModel.OnChangeMute += Mute;
     }
     
     public void Play()
@@ -34,7 +34,7 @@ public sealed class SoundController : BaseController
     protected override void OnDispose()
     {
         base.OnDispose();
-        _context.GameModel.SoundModel.OnChangeMute -= Mute;
-        _context.GameModel.SoundModel.OnChangeVolume -= ChangeVolume;
+        // _context.GameModel.SoundModel.OnChangeMute -= Mute;
+        // _context.GameModel.SoundModel.OnChangeVolume -= ChangeVolume;
     }
 }
