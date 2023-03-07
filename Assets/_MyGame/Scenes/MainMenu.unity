@@ -662,6 +662,7 @@ MonoBehaviour:
   <PlayFabAccount>k__BackingField: {fileID: 784277785}
   <WishConfig>k__BackingField: {fileID: 11400000, guid: b5da8992b19c04681b0ad470c937e9cb, type: 2}
   _audioSource: {fileID: 1433098488}
+  _photonPhotonLauncher: {fileID: 5415046717488622621, guid: 9ea013121968047ac9c4fe81901d2e17, type: 3}
 --- !u!4 &1355471638
 Transform:
   m_ObjectHideFlags: 0

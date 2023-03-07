@@ -1,14 +1,20 @@
 using System;
+using UnityEngine;
 
 public sealed class MainController : BaseController
 {
     private readonly Context _context;
     private MainMenu _mainMenuController;
     private SettingMenu _settingMenu;
+
+    private PhotonLauncher _photonLauncher;
+    
     public MainController(Context context)
     {
         _context = context;
         _context.GameModel.OnChangeGameState += ChangeController;
+        var photon = GameObject.Instantiate(_context.PhotonLauncher);
+        _photonLauncher = photon.GetComponent<PhotonLauncher>();
     }
 
     private void ChangeController(GameState state)
@@ -27,6 +33,7 @@ public sealed class MainController : BaseController
 
                 break;
             case GameState.StartGame:
+                _photonLauncher.Connect();
                 break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(state), state, null);

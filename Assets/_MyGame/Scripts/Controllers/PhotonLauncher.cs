@@ -1,24 +1,19 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Photon;
 using Photon.Pun;
 using Photon.Realtime;
-using TMPro;
 using UnityEngine.UI;
 
 
-public class Launcher : MonoBehaviourPunCallbacks
+public class PhotonLauncher : MonoBehaviourPunCallbacks
 {
     #region Fields
 
-    [SerializeField] private ControlPanelUI _controlPanelUI;
-    [SerializeField] private Text _feedbackText;
+    //[SerializeField] private ControlPanelUI _controlPanelUI;
+    // [SerializeField] private Text _feedbackText;
     [SerializeField] private byte _maxPlayer = 2;
 
     private bool _isConnected;
-    private string _gameVersion = "1";
+    private readonly string _gameVersion = "1";
     
     #endregion
 
@@ -28,12 +23,12 @@ public class Launcher : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.AutomaticallySyncScene = true;
         
-        _controlPanelUI.OnConnectionButtonSubscribe(Connect);
+       // _controlPanelUI.OnConnectionButtonSubscribe(Connect);
     }
 
     private void OnDestroy()
     {
-        _controlPanelUI.OnConnectionButtonUnsubscribe(Connect);
+       // _controlPanelUI.OnConnectionButtonUnsubscribe(Connect);
     }
 
     #endregion
@@ -42,29 +37,29 @@ public class Launcher : MonoBehaviourPunCallbacks
 
     public void Connect()
     {
-        _feedbackText.text = "";
+        // _feedbackText.text = "";
         _isConnected = true;
 
         if (PhotonNetwork.IsConnected)
         {
-            LogFeedback("Joining Room...");
+           // LogFeedback("Joining Room...");
             PhotonNetwork.JoinRandomRoom();
         }
         else
         {
-            LogFeedback("Connecting...");
+          //  LogFeedback("Connecting...");
             PhotonNetwork.ConnectUsingSettings();
             PhotonNetwork.GameVersion = _gameVersion;
         }
     }
 
-    private void LogFeedback(string message)
-    {
-        if(_feedbackText == null)
-            return;
-
-        _feedbackText.text += System.Environment.NewLine + message;
-    }
+    // private void LogFeedback(string message)
+    // {
+    //     if(_feedbackText == null)
+    //         return;
+    //
+    //     _feedbackText.text += System.Environment.NewLine + message;
+    // }
 
     #endregion
 
@@ -74,7 +69,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     {
         if (_isConnected)
         {
-            LogFeedback("<Color=Blue>OnConnectedToMaster</Color>: Next -> Try to join random room.");
+           // LogFeedback("<Color=Blue>OnConnectedToMaster</Color>: Next -> Try to join random room.");
             Debug.Log("OnConnectedToMaster() was called by PUN. Now this client is connected and could join a room.\n Calling: PhotonNetwork.JoinRandomRoom(); Operation will fail if no room found");
             PhotonNetwork.JoinRandomRoom();
         }
@@ -82,7 +77,7 @@ public class Launcher : MonoBehaviourPunCallbacks
 
     public override void OnJoinRandomFailed(short returnCode, string message)
     {
-        LogFeedback("<Color=Red>OnJoinRandomFailed</Color>: Next -> Create a new Room");
+       // LogFeedback("<Color=Red>OnJoinRandomFailed</Color>: Next -> Create a new Room");
         PhotonNetwork.CreateRoom(null, 
             new RoomOptions()
             {
@@ -94,7 +89,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         string name = PhotonNetwork.CurrentRoom.Name;
-        LogFeedback($"<Color=Green>OnJoinedRoom</Color> with {PhotonNetwork.CurrentRoom.PlayerCount} players");
+       // LogFeedback($"<Color=Green>OnJoinedRoom</Color> with {PhotonNetwork.CurrentRoom.PlayerCount} players");
         Debug.Log("OnJoinedRoom() called by PUN. Now this client is in a room.\nFrom here on, your game would be running." + name);
         if (PhotonNetwork.CurrentRoom.PlayerCount == 1)
         {

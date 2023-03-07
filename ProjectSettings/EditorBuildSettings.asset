@@ -5,15 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Studing/Scenes/Lesson4.unity
-    guid: ccc3b5e0d58c5be4eba5b87694bf1226
-  - enabled: 0
-    path: Assets/Studing/Scenes/Game.unity
-    guid: ba2e3df77dfdb4f76b07bd5106704a3e
-  - enabled: 0
-    path: Assets/Studing/Scenes/Lesson6_HomeTasks.unity
-    guid: 82539ffd503194407a6e9ffdd1332bcb
   - enabled: 1
     path: Assets/_MyGame/Scenes/MainMenu.unity
     guid: ddcaca093264e4a89831f3ae36cf3b10
@@ -26,7 +17,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/MetroidvaniaController/Scenes/Demo.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
+  - enabled: 1
     path: Assets/_MyGame/Scenes/Level_01.unity
     guid: 5c80869addb6940c0958b6a035af7381
   - enabled: 0

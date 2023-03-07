@@ -29,8 +29,9 @@ public class PhotonGameManager : MonoBehaviourPunCallbacks
     {
         if (!PhotonNetwork.IsConnected)
         {
-            SceneManager.LoadScene("GameLauncher");
-            return;
+            //SceneManager.LoadScene("GameLauncher");
+            PhotonNetwork.ConnectUsingSettings();
+            Debug.Log("PhotonNetwork.IsConnected");
         }
 
         if (_playerPrefab == null)

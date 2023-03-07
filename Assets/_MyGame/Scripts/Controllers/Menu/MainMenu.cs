@@ -49,6 +49,7 @@ public class MainMenu : BaseController
 
     private void StartGame()
     {
+        _context.GameModel.CurrentState = GameState.StartGame;
         Debug.Log("Start Game");
     }
 
