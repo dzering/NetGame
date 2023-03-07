@@ -12,7 +12,6 @@ public class PhotonGameManager : MonoBehaviourPunCallbacks
 
     #endregion
 
-    
     #region Unity Callbacks
 
     private void Awake()

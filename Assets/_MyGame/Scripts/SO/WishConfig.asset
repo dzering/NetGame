@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44d57cddaaeb7408d8f915f2abcf23c5, type: 3}
+  m_Name: WishConfig
+  m_EditorClassIdentifier: 
+  _text: Active and busy days! Cloudless happiness! Selfless friendship! Priceless
+    taste of life! Prosperity in everything! Vivacity of spirit! Great success! Important
+    and desired events! Faith in good! Happy and delicious feasts! Eternal youth!
+    Attention and care! Opportunities to relax more often! Magic sunrises! Amazing
+    sunsets! All the best - and top notch! Daring plans! Kindness and tenderness!
+    Good words! Homes where they love and wait! Peace of mind! Soul beauty! Desire
+    to move forward! Great friends! Interesting conversations! Interesting ideas!
+    Fulfillment of all desires! Fulfillment of dreams! Comfort and coziness! Beautiful
+    minutes! Beautiful feelings! Good health! Good health! World travel! Kindness
+    and care! Affectionate song of the surf! Easy attitude to life! Amazing surprises!
+    Maximum positive! Lots of good reasons to have fun! Wisdom and experience! Perseverance
+    and perseverance! Of real friends! Boring everyday life! Fire and excitement!
+    Great mood! Great shape! More free time! Gifts and more! Understanding and support!
+    Understanding and warmth! Understanding your uniqueness! Excellent health! Excellent
+    news! Have a wonderful holiday!!! Great meetings! Nice people around! Happy discoveries!
+    The joys of life! Rainbow dream! Fresh wind! Good fortune! Shining sun! Fairytale
+    moments! Glory and recognition! As much money as you want! Creativity and creation!
+    Warm attitude of others! Only happy occasions! Self-confidence! Fascinating communication!
+    Fascinating life! Fascinating memories! Good luck in all endeavors! Smiles of
+    Fortune! Good luck in job! Fantastic luck! Fireworks of emotions! Have a good
+    mood! Good movies and books! Crystal hopes! Blooming gardens and singing birds!
+    Clear sky! Flying feelings! Sense of humor! Wide opportunities! Bright sensations!
+    Clear smile!

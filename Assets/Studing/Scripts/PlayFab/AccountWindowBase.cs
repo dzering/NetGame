@@ -36,12 +36,12 @@ public class AccountWindowBase : MonoBehaviour
 
     protected void EnterInGameScene()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("MainMenu");
     }
 
     private void OnDestroy()
     {
-        Debug.Log($"Destroied");
+        Debug.Log($"Destroyed");
     }
 
 }

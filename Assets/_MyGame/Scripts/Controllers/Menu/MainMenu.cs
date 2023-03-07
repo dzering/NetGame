@@ -12,6 +12,7 @@ public class MainMenu : BaseController
     public MainMenu(Context context, GameObject mainMenuUI, params GameObject[] gameObjects)
     {
         _context = context;
+        _gameObjects = gameObjects;
         Init(context.PlaceForUI, mainMenuUI, gameObjects);
     }
 
@@ -23,14 +24,27 @@ public class MainMenu : BaseController
         if(!go.TryGetComponent(out _mainMenuUI))
             return;
 
-        _mainMenuUI.Init(OpenSettingMenu, StartGame, CloseApplication);
+        _mainMenuUI.Init(OpenSettingMenu, StartGame, CloseApplication, DoSomeFun);
         _gameObjects = gameObjects;
         
         AddGameObject(go);
         foreach (var gameObject in gameObjects)
         {
+            go = Object.Instantiate(gameObject, placeForUI);
             AddGameObject(gameObject);
         }
+
+        UpdateWishesText(_context.WishConfig.GetRandomText());
+        _context.PlayFabAccount.OnGetAccountInfo += UpdateInfo;
+
+        if(_context.PlayFabAccount.AccountInfo == null)
+            return;
+        UpdateInfo(_context.PlayFabAccount.AccountInfo);
+    }
+
+    private void DoSomeFun()
+    {
+        throw new System.NotImplementedException();
     }
 
     private void StartGame()
@@ -53,5 +67,16 @@ public class MainMenu : BaseController
     private void UpdateInfo(string text)
     {
         _mainMenuUI.UpdateInfoText(text);
+    }
+
+    private void UpdateWishesText(string wishText)
+    {
+        _mainMenuUI.UpdateTextFunButton(wishText);
+    }
+
+    protected override void OnDispose()
+    {
+        base.OnDispose();
+        _context.PlayFabAccount.OnGetAccountInfo -= UpdateInfo;
     }
 }
