@@ -37,6 +37,17 @@ public class PhotonLauncher : MonoBehaviourPunCallbacks
 
     #region Methods
 
+    public void ConnectToServer()
+    {
+        if(_isConnected)
+            return;
+        
+        PhotonNetwork.ConnectUsingSettings();
+        PhotonNetwork.GameVersion = _gameVersion;
+        _isConnected = true;
+        
+        Debug.Log("ConnectToServer");
+    }
     public void Connect()
     {
         // _feedbackText.text = "";
@@ -98,7 +109,13 @@ public class PhotonLauncher : MonoBehaviourPunCallbacks
             PhotonNetwork.LoadLevel("Level_01");
         }
     }
-    
+
+    public override void OnDisconnected(DisconnectCause cause)
+    {
+        base.OnDisconnected(cause);
+        _isConnected = false;
+        Debug.LogError(cause);
+    }
 
     #endregion
 }

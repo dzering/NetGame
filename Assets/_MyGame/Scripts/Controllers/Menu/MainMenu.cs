@@ -1,3 +1,4 @@
+using Photon.Pun;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
@@ -9,28 +10,28 @@ public class MainMenu : BaseController
 
     /// <param name="gameObjects">Objects on the scene in Main menu that should be deactivate after close menu</param>
     /// <param name="mainMenuUI">Prefab of UI. Should has a component MainMenuUI.cs</param>
-    public MainMenu(Context context, GameObject mainMenuUI, params GameObject[] gameObjects)
+    public MainMenu(Context context, GameObject mainMenuUI, GameObject placeForUI,  params GameObject[] gameObjects)
     {
         _context = context;
         _gameObjects = gameObjects;
-        Init(context.PlaceForUI, mainMenuUI, gameObjects);
+        Init(placeForUI, mainMenuUI, gameObjects);
     }
 
-    private void Init(Transform placeForUI, GameObject prefabMainMenuUI, GameObject[] gameObjects)
+    private void Init(GameObject placeForUI, GameObject prefabMainMenuUI, GameObject[] gameObjects)
     {
-        var go = Object.Instantiate(prefabMainMenuUI, placeForUI);
+        var go = Object.Instantiate(prefabMainMenuUI, placeForUI.transform);
         go.SetActive(true);
         
         if(!go.TryGetComponent(out _mainMenuUI))
             return;
 
-        _mainMenuUI.Init(OpenSettingMenu, StartGame, CloseApplication, DoSomeFun);
+        _mainMenuUI.Init(OpenSettingMenu, StartGame, CloseApplication, DoSomeFun, SetPlayerName);
         _gameObjects = gameObjects;
         
         AddGameObject(go);
         foreach (var gameObject in gameObjects)
         {
-            go = Object.Instantiate(gameObject, placeForUI);
+            go = Object.Instantiate(gameObject, placeForUI.transform);
             AddGameObject(gameObject);
         }
 
@@ -40,6 +41,11 @@ public class MainMenu : BaseController
         if(_context.PlayFabAccount.AccountInfo == null)
             return;
         UpdateInfo(_context.PlayFabAccount.AccountInfo);
+    }
+
+    private void SetPlayerName(string value)
+    {
+        throw new System.NotImplementedException();
     }
 
     private void DoSomeFun()
@@ -68,6 +74,7 @@ public class MainMenu : BaseController
     private void UpdateInfo(string text)
     {
         _mainMenuUI.UpdateInfoText(text);
+        _mainMenuUI.UpdatePlayerName(PhotonNetwork.LocalPlayer.NickName);
     }
 
     private void UpdateWishesText(string wishText)

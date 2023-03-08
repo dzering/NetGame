@@ -1,16 +1,24 @@
 using System;
 using UnityEditor.Graphs;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Object = UnityEngine.Object;
 
 public sealed class MainController : BaseController
 {
+    #region Fields
+
     private readonly Context _context;
     private MainMenu _mainMenuController;
     private SettingMenu _settingMenu;
+    private GameObject _placeForUI;
 
     private PhotonLauncher _photonLauncher;
-    
+    private GameController _gameController;
+
+    #endregion
+
     public MainController(Context context)
     {
         _context = context;
@@ -19,7 +27,11 @@ public sealed class MainController : BaseController
         _photonLauncher = photon.GetComponent<PhotonLauncher>();
         
         AddGameObject(photon.gameObject);
+        _placeForUI = Object.Instantiate(_context.PlaceForUI);
+        SceneManager.activeSceneChanged += ChangeActiveScene;
     }
+
+    #region Private Methods
 
     private void ChangeController(GameState state)
     {
@@ -30,36 +42,49 @@ public sealed class MainController : BaseController
                 break;
             
             case GameState.MainMenu:
-                _mainMenuController = new MainMenu(_context, _context.UISO.MainMenuGo);
+                _mainMenuController = new MainMenu(_context, _context.UISO.MainMenuGo, _placeForUI);
                 break;
             
             case GameState.SettingMenu:
-                _settingMenu = new SettingMenu(_context);
+                _settingMenu = new SettingMenu(_context, _placeForUI);
                 break;
             
             case GameState.StartGame:
                 
+                _context.GameModel.CurrentState = GameState.LoadingGame;
+
                 if(_photonLauncher.IsConnected)
                     return;
                 _photonLauncher.Connect();
                 break;
             
+            case GameState.LoadingGame:
+                
+                break;
+
             default:
                 throw new ArgumentOutOfRangeException(nameof(state), state, null);
         }
     }
 
-    protected override void OnDispose()
+    private void ChangeActiveScene(Scene current, Scene next)
     {
-        base.OnDispose();
-        DisposeChildObject();
-        _context.GameModel.OnChangeGameState -= ChangeController;
+        _gameController = new GameController(_context);
     }
-    
+
     private void DisposeChildObject()
     {
         _settingMenu?.Dispose();
         _mainMenuController?.Dispose();
     }
 
+    #endregion 
+
+    protected override void OnDispose()
+    {
+        base.OnDispose();
+        DisposeChildObject();
+        _context.GameModel.OnChangeGameState -= ChangeController;
+        SceneManager.activeSceneChanged -= ChangeActiveScene;
+    }
 }

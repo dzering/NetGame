@@ -220,6 +220,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 979118999368604543}
+  - component: {fileID: -6497591406156579781}
   m_Layer: 5
   m_Name: Player Health Panel
   m_TagString: Untagged
@@ -250,6 +251,21 @@ RectTransform:
   m_AnchoredPosition: {x: 100, y: -100}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &-6497591406156579781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2510300827224130276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55070481e3e14db5854cf7dd07c6f249, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerNameLable: {fileID: 728466145580893255}
+  _score: {fileID: 9184615178395472649}
+  _healthSlider: {fileID: 6735186794249411478}
 --- !u!1 &3642380498712681570
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,19 +9,24 @@ using UnityEngine.UI;
 
 public class MainMenuUI : MonoBehaviour
 {
+    [SerializeField] private TMP_InputField _playerNameInput;
     [SerializeField] private TMP_Text _info;
+    
     [SerializeField] private Button _settingButton;
     [SerializeField] private Button _startGame;
     [SerializeField] private Button _closeApplication;
     [SerializeField] private TMP_Text _doSomeFunText;
     [SerializeField] private Button _doSomeFunButton;
+    
+    
     public void Init(UnityAction settingAction, UnityAction startGame,
-        UnityAction closeApplication, UnityAction doSomeFun)
+        UnityAction closeApplication, UnityAction doSomeFun, UnityAction<string> changeInput)
     {
         _startGame.onClick.AddListener(startGame);
         _settingButton.onClick.AddListener(settingAction);
         _closeApplication.onClick.AddListener(closeApplication);
         _doSomeFunButton.onClick.AddListener(doSomeFun);
+        _playerNameInput.onValueChanged.AddListener(changeInput);
     }
 
     private void OnDestroy()
@@ -30,11 +35,17 @@ public class MainMenuUI : MonoBehaviour
         _settingButton.onClick.RemoveAllListeners();
         _closeApplication.onClick.RemoveAllListeners();
         _doSomeFunButton.onClick.RemoveAllListeners();
+        _playerNameInput.onEndEdit.RemoveAllListeners();
     }
 
     public void UpdateInfoText(string info)
     {
         _info.text = info;
+    }
+
+    public void UpdatePlayerName(string playerName)
+    {
+        _playerNameInput.text = playerName;
     }
 
     public void UpdateTextFunButton(string text)

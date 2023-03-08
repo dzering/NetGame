@@ -4,4 +4,6 @@ public enum GameState
     MainMenu = 1,
     SettingMenu = 2,
     StartGame = 3,
+    LoadingGame = 4,
+    LoadedGame = 5,
 }

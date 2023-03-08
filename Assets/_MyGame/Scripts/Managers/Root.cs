@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Root : MonoBehaviour
@@ -5,6 +6,11 @@ public class Root : MonoBehaviour
     [SerializeField] private Context _context;
     private MainController _mainController;
     private SoundController _soundController;
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(this);
+    }
 
     private void Start()
     { 
