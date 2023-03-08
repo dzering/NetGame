@@ -1,5 +1,7 @@
 using System;
+using UnityEditor.Graphs;
 using UnityEngine;
+using UnityEngine.UI;
 
 public sealed class MainController : BaseController
 {
@@ -15,6 +17,8 @@ public sealed class MainController : BaseController
         _context.GameModel.OnChangeGameState += ChangeController;
         var photon = GameObject.Instantiate(_context.PhotonLauncher);
         _photonLauncher = photon.GetComponent<PhotonLauncher>();
+        
+        AddGameObject(photon.gameObject);
     }
 
     private void ChangeController(GameState state)
@@ -24,17 +28,22 @@ public sealed class MainController : BaseController
         {
             case GameState.None:
                 break;
+            
             case GameState.MainMenu:
                 _mainMenuController = new MainMenu(_context, _context.UISO.MainMenuGo);
-
                 break;
+            
             case GameState.SettingMenu:
                 _settingMenu = new SettingMenu(_context);
-
                 break;
+            
             case GameState.StartGame:
+                
+                if(_photonLauncher.IsConnected)
+                    return;
                 _photonLauncher.Connect();
                 break;
+            
             default:
                 throw new ArgumentOutOfRangeException(nameof(state), state, null);
         }

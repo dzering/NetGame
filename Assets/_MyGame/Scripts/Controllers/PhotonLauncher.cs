@@ -1,7 +1,7 @@
+using System.Dynamic;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
-using UnityEngine.UI;
 
 
 public class PhotonLauncher : MonoBehaviourPunCallbacks
@@ -14,7 +14,9 @@ public class PhotonLauncher : MonoBehaviourPunCallbacks
 
     private bool _isConnected;
     private readonly string _gameVersion = "1";
-    
+
+    public bool IsConnected => _isConnected;
+
     #endregion
 
     #region Monobehaviour Callback
@@ -67,7 +69,7 @@ public class PhotonLauncher : MonoBehaviourPunCallbacks
 
     public override void OnConnectedToMaster()
     {
-        if (_isConnected)
+        if (IsConnected)
         {
            // LogFeedback("<Color=Blue>OnConnectedToMaster</Color>: Next -> Try to join random room.");
             Debug.Log("OnConnectedToMaster() was called by PUN. Now this client is connected and could join a room.\n Calling: PhotonNetwork.JoinRandomRoom(); Operation will fail if no room found");

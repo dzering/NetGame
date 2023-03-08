@@ -3,20 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5174a89f-b7b0-4e14-a280-56ef3958b627" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NetGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NetGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Studing/Scripts/Photon/PhotonLauncher.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Studing/Scripts/Photon/PhotonLauncher.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/PlayFabLoginPref.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/PlayFabLoginPref.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scenes/Level_01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scenes/Level_01.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scenes/LogIn.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scenes/LogIn.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Launcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/PhotonLauncher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Launcher.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/PhotonLauncher.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/MainController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/MainController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Menu/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Menu/MainMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/PhotonGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/PhotonGameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Data/Context.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Data/Context.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/PhotonLauncher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/PhotonLauncher.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +14,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a5335f8348054508a63fe4bd080218d4110400/90/b77b82bf/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b360d844ccb2496b82768a99bc8c7dcb15d800/24/29af094d/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b360d844ccb2496b82768a99bc8c7dcb15d800/28/0362d6d4/InvokableCall.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b360d844ccb2496b82768a99bc8c7dcb15d800/48/768d22c3/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b360d844ccb2496b82768a99bc8c7dcb15d800/db/3dc045ec/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b360d844ccb2496b82768a99bc8c7dcb15d800/dc/553d0f78/Object.cs" root0="SKIP_HIGHLIGHTING" />
@@ -150,7 +139,7 @@
       <workItem from="1677937183046" duration="22376000" />
       <workItem from="1678084178031" duration="3274000" />
       <workItem from="1678092762913" duration="9964000" />
-      <workItem from="1678170628293" duration="9860000" />
+      <workItem from="1678170628293" duration="12641000" />
     </task>
     <servers />
   </component>
@@ -161,25 +150,6 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/PhotonLauncher.cs</url>
-          <line>89</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/PhotonLauncher.cs" initialLine="89" containingFunctionPresentation="method 'OnJoinedRoom'">
-            <startOffsets>
-              <option value="2429" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2430" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
