@@ -19,7 +19,6 @@
         [HideInInspector] public SaveDataRepository SaveDataRepository;
 
         [SerializeField] private PlayerInfoPanelUI _playerInfoPanelUI;
-        [SerializeField] private GameObject _mainCamera;
 
         #endregion
 
@@ -36,9 +35,7 @@
         public PhotonLauncher PhotonLauncher => _photonPhotonLauncher;
 
         public PlayerInfoPanelUI InfoPanelUI => _playerInfoPanelUI;
-
-        public GameObject MainCamera => _mainCamera;
-
+        
         #endregion
 
         #region UnityMethods

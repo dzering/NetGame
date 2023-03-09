@@ -69,7 +69,7 @@ public sealed class MainController : BaseController
 
     private void ChangeActiveScene(Scene current, Scene next)
     {
-        _gameController = new GameController(_context, _placeForUI);
+        _gameController = new GameController(_context);
         AddDisposable(_gameController);
     }
 

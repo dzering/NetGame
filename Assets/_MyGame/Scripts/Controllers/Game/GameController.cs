@@ -7,14 +7,14 @@ public sealed class GameController : BaseController
 {
     private PlayerInfoPanelController _playerInfoPanelController;
 
-    public GameController(Context context, Transform placeForUI)
+    public GameController(Context context)
     {
-       Init(context, placeForUI);
+       Init(context);
     }
 
-    private void Init(Context context, Transform placeForUI)
+    private void Init(Context context)
     {
-        _playerInfoPanelController = new PlayerInfoPanelController(context, placeForUI);
+        _playerInfoPanelController = new PlayerInfoPanelController(context);
         AddDisposable(_playerInfoPanelController);
         
     }

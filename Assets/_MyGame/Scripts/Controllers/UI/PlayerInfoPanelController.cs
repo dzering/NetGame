@@ -5,9 +5,9 @@ using UnityEngine;
 public sealed class PlayerInfoPanelController : BaseController
 {
     private PlayerInfoPanelUI _infoPanelUI;
-    public PlayerInfoPanelController(Context context, Transform placeForUI)
+    public PlayerInfoPanelController(Context context)
     {
-        var panelGo = Object.Instantiate(context.InfoPanelUI, placeForUI);
+        var panelGo = Object.Instantiate(context.InfoPanelUI);
         _infoPanelUI = panelGo.GetComponent<PlayerInfoPanelUI>();
         
         AddGameObject(panelGo.gameObject);
