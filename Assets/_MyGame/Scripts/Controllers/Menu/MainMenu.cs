@@ -10,16 +10,16 @@ public class MainMenu : BaseController
 
     /// <param name="gameObjects">Objects on the scene in Main menu that should be deactivate after close menu</param>
     /// <param name="mainMenuUI">Prefab of UI. Should has a component MainMenuUI.cs</param>
-    public MainMenu(Context context, GameObject mainMenuUI, GameObject placeForUI,  params GameObject[] gameObjects)
+    public MainMenu(Context context, GameObject mainMenuUI, Transform placeForUI,  params GameObject[] gameObjects)
     {
         _context = context;
         _gameObjects = gameObjects;
         Init(placeForUI, mainMenuUI, gameObjects);
     }
 
-    private void Init(GameObject placeForUI, GameObject prefabMainMenuUI, GameObject[] gameObjects)
+    private void Init(Transform placeForUI, GameObject prefabMainMenuUI, GameObject[] gameObjects)
     {
-        var go = Object.Instantiate(prefabMainMenuUI, placeForUI.transform);
+        var go = Object.Instantiate(prefabMainMenuUI, placeForUI);
         go.SetActive(true);
         
         if(!go.TryGetComponent(out _mainMenuUI))

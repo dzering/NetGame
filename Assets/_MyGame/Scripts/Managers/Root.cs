@@ -4,6 +4,8 @@ using UnityEngine;
 public class Root : MonoBehaviour
 {
     [SerializeField] private Context _context;
+    
+    private Transform _placeForUI;
     private MainController _mainController;
     private SoundController _soundController;
 
@@ -13,8 +15,10 @@ public class Root : MonoBehaviour
     }
 
     private void Start()
-    { 
-        _mainController = new MainController(_context);
+    {
+        _placeForUI = Instantiate(_context.PlaceForUI).transform;
+        DontDestroyOnLoad(_placeForUI);
+        _mainController = new MainController(_context, _placeForUI);
         _soundController = new SoundController(_context);
 
         _context.GameModel.SoundModel.OnChangeMute += _soundController.Mute;

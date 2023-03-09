@@ -1,12 +1,14 @@
 using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using System;
 
 public class PhotonGameManager : MonoBehaviourPunCallbacks
 {
     #region Fields
 
+    public event Action<GameObject> OnInstantiatePlayer;
+    
     [SerializeField] private GameObject _playerPrefab;
     public static PhotonGameManager Instance; 
 
@@ -43,6 +45,7 @@ public class PhotonGameManager : MonoBehaviourPunCallbacks
             if (PlayerManager.LocalPlayerInstance == null)
             {
                PhotonNetwork.Instantiate(_playerPrefab.name, new Vector3(0f,5f,0f), Quaternion.identity, 0);
+               OnInstantiatePlayer?.Invoke(_playerPrefab);
             }
         }
     }

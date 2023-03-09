@@ -9826,6 +9826,7 @@ GameObject:
   - component: {fileID: 8009405379637708037}
   - component: {fileID: 8009405379637708036}
   - component: {fileID: 7624887507142394876}
+  - component: {fileID: 1530249804637074217}
   m_Layer: 1
   m_Name: DrawCharacter
   m_TagString: Player
@@ -10246,3 +10247,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a69d8b0e4a8a943f2992d52bfaf6e7ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1530249804637074217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8008520910267055987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59d11666ee1aeff4dbb0ae6b9f495a22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FollowSpeed: 2
+  shakeDuration: 0
+  shakeAmount: 0.1
+  decreaseFactor: 1

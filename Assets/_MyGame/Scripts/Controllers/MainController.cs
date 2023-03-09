@@ -1,8 +1,6 @@
 using System;
-using UnityEditor.Graphs;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 using Object = UnityEngine.Object;
 
 public sealed class MainController : BaseController
@@ -12,24 +10,12 @@ public sealed class MainController : BaseController
     private readonly Context _context;
     private MainMenu _mainMenuController;
     private SettingMenu _settingMenu;
-    private GameObject _placeForUI;
+    private readonly Transform _placeForUI;
 
     private PhotonLauncher _photonLauncher;
     private GameController _gameController;
 
     #endregion
-
-    public MainController(Context context)
-    {
-        _context = context;
-        _context.GameModel.OnChangeGameState += ChangeController;
-        var photon = GameObject.Instantiate(_context.PhotonLauncher);
-        _photonLauncher = photon.GetComponent<PhotonLauncher>();
-        
-        AddGameObject(photon.gameObject);
-        _placeForUI = Object.Instantiate(_context.PlaceForUI);
-        SceneManager.activeSceneChanged += ChangeActiveScene;
-    }
 
     #region Private Methods
 
@@ -50,16 +36,17 @@ public sealed class MainController : BaseController
                 break;
             
             case GameState.StartGame:
-                
-                _context.GameModel.CurrentState = GameState.LoadingGame;
-
                 if(_photonLauncher.IsConnected)
-                    return;
+                     return;
                 _photonLauncher.Connect();
+                _context.GameModel.CurrentState = GameState.LoadingGame;
                 break;
             
             case GameState.LoadingGame:
-                
+                _context.GameModel.CurrentState = GameState.Game;
+                break;
+            
+            case GameState.Game:
                 break;
 
             default:
@@ -67,9 +54,23 @@ public sealed class MainController : BaseController
         }
     }
 
+    public MainController(Context context, Transform placeForUI)
+    {
+        _context = context;
+        _placeForUI = placeForUI;
+
+        var photon = Object.Instantiate(_context.PhotonLauncher);
+        _photonLauncher = photon.GetComponent<PhotonLauncher>();
+        AddGameObject(photon.gameObject);
+
+        _context.GameModel.OnChangeGameState += ChangeController;
+        SceneManager.activeSceneChanged += ChangeActiveScene;
+    }
+
     private void ChangeActiveScene(Scene current, Scene next)
     {
-        _gameController = new GameController(_context);
+        _gameController = new GameController(_context, _placeForUI);
+        AddDisposable(_gameController);
     }
 
     private void DisposeChildObject()

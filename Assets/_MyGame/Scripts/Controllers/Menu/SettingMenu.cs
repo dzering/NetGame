@@ -8,7 +8,7 @@ public class SettingMenu : BaseController
 
     private Context _context;
 
-    public SettingMenu(Context context, GameObject placeForUI)
+    public SettingMenu(Context context, Transform placeForUI)
     {
         _context = context;
         _soundModel = context.GameModel.SoundModel;
@@ -17,9 +17,9 @@ public class SettingMenu : BaseController
         UpdateUI(_context.GameModel.SoundModel);
     }
 
-    private void Init(SoundModel soundModel, GameObject placeForUI)
+    private void Init(SoundModel soundModel, Transform placeForUI)
     {
-        var go = Object.Instantiate(_context.UISO.SettingMenuGo, placeForUI.transform);
+        var go = Object.Instantiate(_context.UISO.SettingMenuGo, placeForUI);
         go.SetActive(true);
 
         if (!go.TryGetComponent(out _settingMenuUI))
