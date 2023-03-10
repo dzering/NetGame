@@ -48,11 +48,11 @@ MonoBehaviour:
   <UISO>k__BackingField: {fileID: 11400000, guid: 54355285f14424996983f914fa4b404a, type: 2}
   <PlaceForUI>k__BackingField: {fileID: 5163617686956632277, guid: 795fcd44582e74d32825bed3e70d80e1, type: 3}
   <PlayFabAccount>k__BackingField: {fileID: 0}
-  _photonGameManager: {fileID: 867817812151016589, guid: 2b80800ce40ce49c797986ea925ecf55, type: 3}
+  _photonPhotonGameManager: {fileID: 867817812151016588, guid: 2b80800ce40ce49c797986ea925ecf55, type: 3}
   <WishConfig>k__BackingField: {fileID: 11400000, guid: b5da8992b19c04681b0ad470c937e9cb, type: 2}
   _audioSource: {fileID: 0}
   _photonPhotonLauncher: {fileID: 5415046717488622621, guid: 9ea013121968047ac9c4fe81901d2e17, type: 3}
-  _playerInfoPanelUI: {fileID: 7401796066012502347, guid: 253bd313b2ac442eeb9b15da7bc0d635, type: 3}
+  _playerInfoPanelUI: {fileID: 6740981256325248723, guid: 253bd313b2ac442eeb9b15da7bc0d635, type: 3}
 --- !u!114 &7331722108790039982
 MonoBehaviour:
   m_ObjectHideFlags: 0

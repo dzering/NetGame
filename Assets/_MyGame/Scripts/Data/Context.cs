@@ -19,7 +19,7 @@
         private GameModel _gameGameModel;
         [HideInInspector] public SaveDataRepository SaveDataRepository;
 
-        [SerializeField] private PlayerInfoPanelUI _playerInfoPanelUI;
+        [SerializeField] private GameObject _playerInfoPanelUI;
 
         #endregion
 
@@ -35,7 +35,7 @@
 
         public PhotonLauncher PhotonLauncher => _photonPhotonLauncher;
 
-        public PlayerInfoPanelUI InfoPanelUI => _playerInfoPanelUI;
+        public GameObject InfoPanelUI => _playerInfoPanelUI;
 
         public GameObject PhotonGameManager => _photonPhotonGameManager;
 

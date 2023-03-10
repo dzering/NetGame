@@ -4,21 +4,13 @@
     <list default="true" id="5174a89f-b7b0-4e14-a280-56ef3958b627" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NetGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NetGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/Root.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/Root.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/UI/Main Menu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/UI/Main Menu.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Resources/DrawCharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Resources/DrawCharacter.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scenes/Level_01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scenes/Level_01.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/UI/PlayerInfoPanel.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/UI/PlayerInfoPanel.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scenes/LogIn.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scenes/LogIn.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Game/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Game/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Game/Player/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Game/Player/PlayerManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Menu/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Menu/MainMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/PhotonGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/PhotonGameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/UI/PlayerInfoPanelController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/UI/PlayerInfoPanelController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/UI/PlayerInfoPanelUI.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/UI/PlayerInfoPanelUI.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Data/Context.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Data/Context.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/View/MainMenuUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/View/MainMenuUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +154,7 @@
       <workItem from="1678092762913" duration="9964000" />
       <workItem from="1678170628293" duration="26894000" />
       <workItem from="1678298829010" duration="14401000" />
-      <workItem from="1678373288225" duration="12605000" />
+      <workItem from="1678373288225" duration="15006000" />
     </task>
     <servers />
   </component>
