@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
@@ -9,7 +10,6 @@ using UnityEngine.UI;
 
 public class MainMenuUI : MonoBehaviour
 {
-    [SerializeField] private TMP_InputField _playerNameInput;
     [SerializeField] private TMP_Text _info;
     
     [SerializeField] private Button _settingButton;
@@ -26,7 +26,6 @@ public class MainMenuUI : MonoBehaviour
         _settingButton.onClick.AddListener(settingAction);
         _closeApplication.onClick.AddListener(closeApplication);
         _doSomeFunButton.onClick.AddListener(doSomeFun);
-        _playerNameInput.onValueChanged.AddListener(changeInput);
     }
 
     private void OnDestroy()
@@ -35,17 +34,11 @@ public class MainMenuUI : MonoBehaviour
         _settingButton.onClick.RemoveAllListeners();
         _closeApplication.onClick.RemoveAllListeners();
         _doSomeFunButton.onClick.RemoveAllListeners();
-        _playerNameInput.onEndEdit.RemoveAllListeners();
     }
 
     public void UpdateInfoText(string info)
     {
         _info.text = info;
-    }
-
-    public void UpdatePlayerName(string playerName)
-    {
-        _playerNameInput.text = playerName;
     }
 
     public void UpdateTextFunButton(string text)

@@ -27,7 +27,6 @@ public class PlayerManager : MonoBehaviourPunCallbacks, IPunObservable
     {
         if (stream.IsReading)
         {
-            
         }
 
         if (stream.IsWriting)

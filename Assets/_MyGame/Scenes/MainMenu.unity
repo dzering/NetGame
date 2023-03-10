@@ -5366,6 +5366,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1025145325119744, guid: d975e66254b08984ab50d4c39dcb947f, type: 3}
     - target: {fileID: 7331722108790039980, guid: 4c75cadcfa12d45e8bf7293ac8f8aa76, type: 3}
+      propertyPath: _photonPhotonGameManager
+      value: 
+      objectReference: {fileID: 867817812151016588, guid: 2b80800ce40ce49c797986ea925ecf55, type: 3}
+    - target: {fileID: 7331722108790039980, guid: 4c75cadcfa12d45e8bf7293ac8f8aa76, type: 3}
       propertyPath: <PlayFabAccount>k__BackingField
       value: 
       objectReference: {fileID: 784277785}

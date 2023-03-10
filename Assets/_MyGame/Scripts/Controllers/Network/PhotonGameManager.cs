@@ -7,10 +7,13 @@ public class PhotonGameManager : MonoBehaviourPunCallbacks
 {
     #region Fields
 
-    public event Action<GameObject> OnInstantiatePlayer;
+    public event Action<PlayerManager> OnInstantiatePlayer;
     
     [SerializeField] private GameObject _playerPrefab;
-    public static PhotonGameManager Instance; 
+    public static PhotonGameManager Instance;
+    private PlayerManager _playerManager;
+
+    public PlayerManager PlayerManager => _playerManager;
 
     #endregion
 
@@ -43,9 +46,15 @@ public class PhotonGameManager : MonoBehaviourPunCallbacks
         else
         {
             if (PlayerManager.LocalPlayerInstance == null)
-            {
-               PhotonNetwork.Instantiate(_playerPrefab.name, new Vector3(0f,5f,0f), Quaternion.identity, 0);
-               OnInstantiatePlayer?.Invoke(_playerPrefab);
+            { 
+               var go = PhotonNetwork.Instantiate(_playerPrefab.name, new Vector3(0f,5f,0f), Quaternion.identity, 0);
+               _playerManager = go.GetComponent<PlayerManager>();
+               // var playerManager = go.GetComponent<PlayerManager>();
+               // var localPhotonView = playerManager.photonView;
+               // var owner = localPhotonView.Owner;
+               // var nickName = owner.NickName;
+               
+               OnInstantiatePlayer?.Invoke(_playerManager);
             }
         }
     }

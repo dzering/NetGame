@@ -74,7 +74,6 @@ public class MainMenu : BaseController
     private void UpdateInfo(string text)
     {
         _mainMenuUI.UpdateInfoText(text);
-        _mainMenuUI.UpdatePlayerName(PhotonNetwork.LocalPlayer.NickName);
     }
 
     private void UpdateWishesText(string wishText)

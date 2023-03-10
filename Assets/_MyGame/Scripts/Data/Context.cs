@@ -10,10 +10,11 @@
         [field: SerializeField] public UISO UISO { get; private set; }
         [field: SerializeField] public GameObject PlaceForUI { get; private set; }
         [field: SerializeField] public PlayFabAccountManager PlayFabAccount { get; private set; }
+        [SerializeField] private GameObject _photonPhotonGameManager;
         [field: SerializeField] public WishConfig WishConfig { get; private set; }
         [SerializeField] private AudioSource _audioSource;
         
-        [FormerlySerializedAs("_photonLauncher")] [SerializeField] private PhotonLauncher _photonPhotonLauncher;
+        [SerializeField] private PhotonLauncher _photonPhotonLauncher;
        
         private GameModel _gameGameModel;
         [HideInInspector] public SaveDataRepository SaveDataRepository;
@@ -35,7 +36,9 @@
         public PhotonLauncher PhotonLauncher => _photonPhotonLauncher;
 
         public PlayerInfoPanelUI InfoPanelUI => _playerInfoPanelUI;
-        
+
+        public GameObject PhotonGameManager => _photonPhotonGameManager;
+
         #endregion
 
         #region UnityMethods
