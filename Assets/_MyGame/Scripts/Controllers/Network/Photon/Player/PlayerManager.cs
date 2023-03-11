@@ -9,9 +9,16 @@ public class PlayerManager : MonoBehaviourPunCallbacks, IPunObservable
     public static GameObject LocalPlayerInstance;
     private CameraFollow _camera;
     private PlayerInfoPanelUI _panelUI;
+    private float _health;
 
     public PlayerInfoPanelUI PanelUI => _panelUI;
-    public float Health { get; set; }
+    public float Health
+    {
+        get => _health;
+        set => _health = value;
+        // if(_health <= 0)
+        //    PhotonNetwork.Destroy(LocalPlayerInstance) ;
+    }
 
     #region Unity Callbacks
     
@@ -94,5 +101,5 @@ public class PlayerManager : MonoBehaviourPunCallbacks, IPunObservable
         GameObject _uiGo = Instantiate(this.PlayerUiPrefab);
         _uiGo.SendMessage("SetTarget", this, SendMessageOptions.RequireReceiver);
     }
-
+    
 }

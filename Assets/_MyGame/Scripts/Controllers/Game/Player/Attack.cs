@@ -30,8 +30,8 @@ public class Attack : MonoBehaviourPun
     // Update is called once per frame
     void Update()
     {
-	    if (photonView.IsMine == false) ;
-		    return;
+	    // if (photonView.IsMine == false) ;
+		   //  return;
 		    
 		if (Input.GetKeyDown(KeyCode.X) && canAttack)
 		{
@@ -39,7 +39,7 @@ public class Attack : MonoBehaviourPun
 			animator.SetBool("IsAttacking", true);
 			StartCoroutine(AttackCooldown());
 		}
-
+		
 		if (Input.GetKeyDown(KeyCode.V))
 		{
 			GameObject throwableWeapon = Instantiate(throwableObject, transform.position + new Vector3(transform.localScale.x * 0.5f,-0.2f), Quaternion.identity) as GameObject; 

@@ -3,39 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="5174a89f-b7b0-4e14-a280-56ef3958b627" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NetGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NetGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Prefabs/Enemies.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Prefabs/Enemies/AllyAISimple.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Prefabs/Enemies/AllyAISimple.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Prefabs/Enemies/EnemySimple.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Prefabs/Enemies/EnemySimple.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Enemies.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Enemies/Ally.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Enemies/Ally.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Enemies/Enemy.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Enemies/Enemy.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Enemies/ThrowableProjectile.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Enemies/ThrowableProjectile.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Player/Attack.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Player/Attack.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Player/CharacterController2D.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Player/CharacterController2D.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Player/PlayerMovement.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Player/PlayerMovement.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Player/ThrowableWeapon.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Player/ThrowableWeapon.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/UI/PlaceForUI.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/UI/PlaceForUI.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/UI/PlayerInfoPanel.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/UI/PlayerInfoPanel.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Game/Player/CameraFollow.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Game/Player/CameraFollow.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Game/Player/PlayerManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/KillZone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/KillZone.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/Enemies/AllyAISimple.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/Enemies/AllyAISimple.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/Enemies/EnemySimple.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/Enemies/EnemySimple.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/Level/Grass.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/Level/Grass.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/Network/PhotonGameManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/Network/PhotonGameManager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scenes/Level_01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scenes/Level_01.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Enemies/Ally.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Enemies/Ally.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Game/Player/Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Game/Player/Attack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Game/Player/CharacterController2D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Game/Player/CharacterController2D.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/Photon/PhotonGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/Photon/PhotonGameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/Photon/Player/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/Photon/Player/PlayerManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/PhotonGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/Photon/PhotonGameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/PhotonGameManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/Photon/PhotonGameManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/PhotonLauncher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/Photon/PhotonLauncher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/PhotonLauncher.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/Photon/PhotonLauncher.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +30,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b360d844ccb2496b82768a99bc8c7dcb15d800/28/0362d6d4/InvokableCall.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b360d844ccb2496b82768a99bc8c7dcb15d800/48/768d22c3/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b360d844ccb2496b82768a99bc8c7dcb15d800/5c/33952b72/Transform.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b360d844ccb2496b82768a99bc8c7dcb15d800/84/54306950/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b360d844ccb2496b82768a99bc8c7dcb15d800/db/3dc045ec/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b360d844ccb2496b82768a99bc8c7dcb15d800/dc/553d0f78/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../CCity/Assets/Code/CCity_56/Fortuity.cs" root0="SKIP_HIGHLIGHTING" />
@@ -125,10 +107,10 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="54861">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="54861" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -181,6 +163,8 @@
       <workItem from="1678170628293" duration="26894000" />
       <workItem from="1678298829010" duration="14401000" />
       <workItem from="1678373288225" duration="43690000" />
+      <workItem from="1678532064851" duration="5589000" />
+      <workItem from="1678557505808" duration="1190000" />
     </task>
     <servers />
   </component>

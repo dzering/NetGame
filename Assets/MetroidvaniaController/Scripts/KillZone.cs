@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,11 +10,17 @@ public class KillZone : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+            //SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+            PhotonNetwork.Destroy(col.gameObject);
         }
         else
         {
-            Destroy(col.gameObject);
+            if(col.gameObject.TryGetComponent<PhotonView>(out var view)) 
+                PhotonNetwork.Destroy(col.gameObject);
+            else
+            {
+                Destroy(col.gameObject);
+            }
         }
     }
 }

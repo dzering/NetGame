@@ -2,12 +2,14 @@ using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine;
 using System;
+using UnityEngine.Serialization;
 
 public class PhotonGameManager : MonoBehaviourPunCallbacks
 {
     #region Fields
     
     [SerializeField] private GameObject _playerPrefab;
+    [FormerlySerializedAs("_enemy")] [SerializeField] private GameObject _enemyPrefab;
     public static PhotonGameManager Instance;
 
     #endregion
@@ -45,6 +47,12 @@ public class PhotonGameManager : MonoBehaviourPunCallbacks
                OnInstantiatePlayer?.Invoke(go);
             }
         }
+
+        if (PhotonNetwork.IsMasterClient)
+        {
+            var enemy = PhotonNetwork.Instantiate(_enemyPrefab.name, new Vector3(2f, 5f, 0f), Quaternion.identity, 0);    
+        }
+        
     }
 
     #endregion
