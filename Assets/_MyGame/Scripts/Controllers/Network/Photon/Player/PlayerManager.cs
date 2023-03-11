@@ -24,6 +24,8 @@ public class PlayerManager : MonoBehaviourPunCallbacks, IPunObservable
 
     private void Start()
     {
+        InitHP();
+
         if (PlayerUiPrefab != null)
         {
             GameObject uiGo =  Instantiate(PlayerUiPrefab);
@@ -37,7 +39,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks, IPunObservable
 
         var rect = _panelUI.gameObject.GetComponent<RectTransform>();
         var pos = rect.anchoredPosition;
-        
+
         if (PhotonNetwork.IsMasterClient && !photonView.IsMine)
         {
             rect.anchoredPosition = new Vector2(800, pos.y);
@@ -47,7 +49,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks, IPunObservable
         {
             rect.anchoredPosition = new Vector2(800, pos.y);
         }
-        
+
         _camera = this.GetComponent<CameraFollow>();
         if(_camera != null)
             if (photonView.IsMine)
@@ -56,14 +58,6 @@ public class PlayerManager : MonoBehaviourPunCallbacks, IPunObservable
             {
                 Debug.LogError("<Color=Red><a>Missing</a></Color> CameraWork Component on playerPrefab.", this);
             }
-
-        if (photonView.IsMine)
-        {
-            InitHP();
-        }
-        
-        _panelUI.SetMaxHealth(Health);
-
     }
 
     #endregion
@@ -84,13 +78,13 @@ public class PlayerManager : MonoBehaviourPunCallbacks, IPunObservable
     {
         if (stream.IsWriting)
         {
-           // stream.SendNext(_num++);
+            stream.SendNext(Health);
             Debug.Log($"{photonView.Owner.NickName} + {photonView.GetHashCode()}: send message");
         }
 
         else
         {
-           // this._num = (int)stream.ReceiveNext();
+            Health = (float)stream.ReceiveNext();
             Debug.Log($"{photonView.Owner.NickName} + {photonView.GetHashCode()}: recive message");
         }
     }

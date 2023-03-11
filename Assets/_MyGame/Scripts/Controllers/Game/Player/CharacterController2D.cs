@@ -1,12 +1,16 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 using System.Collections;
 using UnityEngine.SceneManagement;
 using Photon.Realtime;
 using Photon.Pun;
+using UnityEngine.Serialization;
 
 public class CharacterController2D : MonoBehaviourPun
 {
+	public event Action<float> OnChangeHP; 
+
 	[SerializeField] private float m_JumpForce = 400f;							// Amount of force added when the player jumps.
 	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;	// How much to smooth out the movement
 	[SerializeField] private bool m_AirControl = false;							// Whether or not a player can steer while jumping;
@@ -31,7 +35,7 @@ public class CharacterController2D : MonoBehaviourPun
 	private float prevVelocityX = 0f;
 	private bool canCheck = false; //For check if player is wallsliding
 
-	public float life = 10f; //Life of the player
+	[FormerlySerializedAs("life")] [SerializeField] private float _health = 10f; //Life of the player
 	public bool invincible = false; //If player can die
 	private bool canMove = true; //If player can move
 
@@ -51,6 +55,16 @@ public class CharacterController2D : MonoBehaviourPun
 
 	[System.Serializable]
 	public class BoolEvent : UnityEvent<bool> { }
+
+	public float Health
+	{
+		get => _health;
+		set
+		{
+			_health = value;
+			OnChangeHP?.Invoke(value);
+		}
+	}
 
 	private void Awake()
 	{
@@ -271,11 +285,11 @@ public class CharacterController2D : MonoBehaviourPun
 		if (!invincible)
 		{
 			animator.SetBool("Hit", true);
-			life -= damage;
+			Health -= damage;
 			Vector2 damageDir = Vector3.Normalize(transform.position - position) * 40f ;
 			m_Rigidbody2D.velocity = Vector2.zero;
 			m_Rigidbody2D.AddForce(damageDir * 10);
-			if (life <= 0)
+			if (Health <= 0)
 			{
 				StartCoroutine(WaitToDead());
 			}
