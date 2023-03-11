@@ -9876,7 +9876,7 @@ MonoBehaviour:
   m_WallCheck: {fileID: 8013778177211654215}
   canDoubleJump: 0
   m_DashForce: 25
-  life: 10
+  _health: 10
   invincible: 0
   particleJumpUp: {fileID: 7919188665353981123}
   particleJumpDown: {fileID: 7918946940341206633}
@@ -10247,6 +10247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a69d8b0e4a8a943f2992d52bfaf6e7ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerUiPrefab: {fileID: 5483494796533117484, guid: 80dc2f3b98bc1460a9648a45e67efa1b, type: 3}
 --- !u!114 &1530249804637074217
 MonoBehaviour:
   m_ObjectHideFlags: 0

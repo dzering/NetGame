@@ -2,15 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5174a89f-b7b0-4e14-a280-56ef3958b627" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/Photon.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/Photon/Player.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/Photon/Player/PlayerManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NetGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NetGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/Root.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/Root.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Prefabs/Enemies.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Prefabs/Enemies/AllyAISimple.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Prefabs/Enemies/AllyAISimple.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Prefabs/Enemies/EnemySimple.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Prefabs/Enemies/EnemySimple.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Enemies.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Enemies/Ally.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Enemies/Ally.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Enemies/Enemy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Enemies/Enemy.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Enemies/ThrowableProjectile.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Enemies/ThrowableProjectile.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Player/Attack.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Player/Attack.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Player/CharacterController2D.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Player/CharacterController2D.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Player/PlayerMovement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Player/PlayerMovement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Player/ThrowableWeapon.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Player/ThrowableWeapon.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/UI/PlaceForUI.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/UI/PlaceForUI.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/UI/PlayerInfoPanel.prefab" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/UI/PlayerInfoPanel.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scenes/LogIn.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scenes/LogIn.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/UI/PlayerInfoPanelController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/UI/PlayerInfoPanelController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Resources/DrawCharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Resources/DrawCharacter.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scenes/Level_01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scenes/Level_01.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Game/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Game/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Game/Player/CameraFollow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/Photon/Player/CameraFollow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Game/Player/CameraFollow.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/Photon/Player/CameraFollow.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Game/Player/PlayerManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Game/Player/PlayerManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/Photon/Player/PlayerManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/PhotonGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/PhotonGameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/UI/PlayerInfoPanelController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/UI/PlayerInfoPanelController.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/UI/PlayerInfoPanelUI.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/UI/PlayerInfoPanelUI.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Data/Context.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Data/Context.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +51,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437b08e283d74200b911f7cfab028d483c00/67/5775e9a5/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a5335f8348054508a63fe4bd080218d4110400/90/b77b82bf/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b360d844ccb2496b82768a99bc8c7dcb15d800/24/29af094d/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b360d844ccb2496b82768a99bc8c7dcb15d800/28/0362d6d4/InvokableCall.cs" root0="SKIP_HIGHLIGHTING" />
@@ -31,7 +65,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/Config/WishConfig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Game/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/PlayerNameInput.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/UI/PlayerInfoPanelController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/Enum/GameState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/Interface/IData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/View/SettingMenuUI.cs" root0="FORCE_HIGHLIGHTING" />
@@ -44,6 +77,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/IMaskable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/MaskableGraphic.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../NetGame_clone_0/Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Scripts/LoaderAnime.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../NetGame_clone_1/Assets/_MyGame/Scripts/Controllers/Network/Photon/Player/CameraFollow.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -99,10 +133,10 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="48991">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="54861">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="48991" />
+      <option name="pid" value="54861" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -154,7 +188,7 @@
       <workItem from="1678092762913" duration="9964000" />
       <workItem from="1678170628293" duration="26894000" />
       <workItem from="1678298829010" duration="14401000" />
-      <workItem from="1678373288225" duration="15006000" />
+      <workItem from="1678373288225" duration="40680000" />
     </task>
     <servers />
   </component>
@@ -176,6 +210,25 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/Photon/Player/PlayerManager.cs</url>
+          <line>26</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/Photon/Player/PlayerManager.cs" initialLine="26" containingFunctionPresentation="method 'Start'">
+            <startOffsets>
+              <option value="653" />
+            </startOffsets>
+            <endOffsets>
+              <option value="680" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
