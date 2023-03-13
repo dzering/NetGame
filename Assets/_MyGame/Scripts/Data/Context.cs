@@ -1,9 +1,6 @@
-    using System;
-    using PlayFab;
-    using UnityEngine;
-    using UnityEngine.Serialization;
+using UnityEngine;
 
-    public sealed class Context : MonoBehaviour
+public sealed class Context : MonoBehaviour
     {
         #region Fields
 
@@ -38,6 +35,7 @@
         public GameObject InfoPanelUI => _playerInfoPanelUI;
 
         public GameObject PhotonGameManager => _photonPhotonGameManager;
+        
 
         #endregion
 

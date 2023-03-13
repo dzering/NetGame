@@ -1,8 +1,6 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
-using Photon.Realtime;
 
 public class Attack : MonoBehaviourPun
 {
@@ -30,8 +28,8 @@ public class Attack : MonoBehaviourPun
     // Update is called once per frame
     void Update()
     {
-	    // if (photonView.IsMine == false) ;
-		   //  return;
+	    if(photonView.IsMine == false)
+			return;
 		    
 		if (Input.GetKeyDown(KeyCode.X) && canAttack)
 		{
@@ -40,13 +38,13 @@ public class Attack : MonoBehaviourPun
 			StartCoroutine(AttackCooldown());
 		}
 		
-		if (Input.GetKeyDown(KeyCode.V))
-		{
-			GameObject throwableWeapon = Instantiate(throwableObject, transform.position + new Vector3(transform.localScale.x * 0.5f,-0.2f), Quaternion.identity) as GameObject; 
-			Vector2 direction = new Vector2(transform.localScale.x, 0);
-			throwableWeapon.GetComponent<ThrowableWeapon>().direction = direction; 
-			throwableWeapon.name = "ThrowableWeapon";
-		}
+		// if (Input.GetKeyDown(KeyCode.V))
+		// {
+		// 	GameObject throwableWeapon = Instantiate(throwableObject, transform.position + new Vector3(transform.localScale.x * 0.5f,-0.2f), Quaternion.identity) as GameObject; 
+		// 	Vector2 direction = new Vector2(transform.localScale.x, 0);
+		// 	throwableWeapon.GetComponent<ThrowableWeapon>().direction = direction; 
+		// 	throwableWeapon.name = "ThrowableWeapon";
+		// }
 	}
 
 	IEnumerator AttackCooldown()
@@ -57,6 +55,9 @@ public class Attack : MonoBehaviourPun
 
 	public void DoDashDamage()
 	{
+		if(photonView.IsMine == false)
+			return;
+		
 		dmgValue = Mathf.Abs(dmgValue);
 		Collider2D[] collidersEnemies = Physics2D.OverlapCircleAll(attackCheck.position, 0.9f);
 		for (int i = 0; i < collidersEnemies.Length; i++)
@@ -66,9 +67,10 @@ public class Attack : MonoBehaviourPun
 				if (collidersEnemies[i].transform.position.x - transform.position.x < 0)
 				{
 					dmgValue = -dmgValue;
+					gameObject.SendMessage("AddScore", -dmgValue*2);
 				}
 				collidersEnemies[i].gameObject.SendMessage("ApplyDamage", dmgValue);
-				cam.GetComponent<CameraFollow>().ShakeCamera();
+				//cam.GetComponent<CameraFollow>().ShakeCamera();
 			}
 		}
 	}

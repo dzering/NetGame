@@ -45,4 +45,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerPrefab: {fileID: 8008520910267055987, guid: ab2ec5fe74e09481a86d4fdb681efb73, type: 3}
-  _enemy: {fileID: 1516778740484128, guid: e379d1f3d7fb9944e8550815cea8fafb, type: 3}
+  _spawner: {fileID: 28144400225182481, guid: 39a2e2bd025ec4970a05b796c3c676d1, type: 3}
+  _gameOver: {fileID: 172958678301425539, guid: de125374b2a5b42399a6b5cefcf1269a, type: 3}

@@ -2,21 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5174a89f-b7b0-4e14-a280-56ef3958b627" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Game/GameOver.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Game/GameOver.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Game/Spawner.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Game/Spawner.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NetGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NetGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/KillZone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/KillZone.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/Enemies/AllyAISimple.prefab" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/Enemies/AllyAISimple.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/Enemies/EnemySimple.prefab" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/Enemies/EnemySimple.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/Level/Grass.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/Level/Grass.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/Network/PhotonGameManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/Network/PhotonGameManager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/Root.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/Root.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/UI/Menu Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Prefabs/UI/Menu Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Resources/DrawCharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Resources/DrawCharacter.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scenes/Level_01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scenes/Level_01.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Enemies/Ally.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Enemies/Ally.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Game/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Game/GameController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Game/Player/Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Game/Player/Attack.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Game/Player/CharacterController2D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Game/Player/CharacterController2D.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/Photon/PhotonGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/Photon/PhotonGameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/MainController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/MainController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Menu/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Menu/MainMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/Photon/PhotonGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/Photon/PhotonRoomManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/Photon/PhotonGameManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/Photon/PhotonRoomManager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/Photon/Player/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/Photon/Player/PlayerManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/PlayFab/CreateNewCharacterPanelUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/PlayFab/CreateNewCharacterPanelUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/PlayFab/PlayFabAccountManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/PlayFab/PlayFabAccountManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Data/Context.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Data/Context.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Enum/GameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Enum/GameState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Managers/Root.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Managers/Root.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyGame/Scripts/View/PlayerInfoPanelUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/View/PlayerInfoPanelUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +46,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437b08e283d74200b911f7cfab028d483c00/67/5775e9a5/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a5335f8348054508a63fe4bd080218d4110400/90/b77b82bf/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b01774392bf441f59388585f8e74649d38e00/e0/10538e12/PhotonPeer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b360d844ccb2496b82768a99bc8c7dcb15d800/24/29af094d/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b360d844ccb2496b82768a99bc8c7dcb15d800/28/0362d6d4/InvokableCall.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b360d844ccb2496b82768a99bc8c7dcb15d800/48/768d22c3/Component.cs" root0="SKIP_HIGHLIGHTING" />
@@ -38,6 +59,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/Config/UISO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/Config/WishConfig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Game/GameController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Game/Player/SaveScore.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Network/Photon/Player/PlayerNameInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/Enum/GameState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_MyGame/Scripts/Interface/IData.cs" root0="FORCE_HIGHLIGHTING" />
@@ -50,8 +72,9 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Graphic.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/IMaskable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/MaskableGraphic.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../NetGame_clone_0/Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Scripts/LoaderAnime.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../NetGame_clone_1/Assets/Photon/PhotonUnityNetworking/Code/PhotonView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../NetGame_clone_1/Assets/_MyGame/Scripts/Controllers/Network/Photon/Player/CameraFollow.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../NetGame_clone_1/Assets/_MyGame/Scripts/Controllers/Network/Photon/Player/PlayerManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -164,7 +187,17 @@
       <workItem from="1678298829010" duration="14401000" />
       <workItem from="1678373288225" duration="43690000" />
       <workItem from="1678532064851" duration="5589000" />
-      <workItem from="1678557505808" duration="1190000" />
+      <workItem from="1678557505808" duration="1514000" />
+      <workItem from="1678598346050" duration="7963000" />
+      <workItem from="1678610641759" duration="431000" />
+      <workItem from="1678611113374" duration="79000" />
+      <workItem from="1678615991145" duration="5188000" />
+      <workItem from="1678627412641" duration="4254000" />
+      <workItem from="1678636754625" duration="6563000" />
+      <workItem from="1678646060995" duration="1715000" />
+      <workItem from="1678689409811" duration="21656000" />
+      <workItem from="1678720221446" duration="618000" />
+      <workItem from="1678722957228" duration="209000" />
     </task>
     <servers />
   </component>
@@ -186,6 +219,25 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Enemies/Ally.cs</url>
+          <line>278</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/_MyGame/Scripts/Controllers/Enemies/Ally.cs" initialLine="278" containingFunctionPresentation="method 'DestroyEnemy'">
+            <startOffsets>
+              <option value="7542" />
+            </startOffsets>
+            <endOffsets>
+              <option value="7586" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,4 +1,3 @@
-using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -26,6 +25,11 @@ public class PlayerInfoPanelUI : MonoBehaviour
         {
             _healthSlider.value = _target.Health;
         }
+
+        if (_score != null)
+        {
+            _score.text ="Score: " + _target.Score;
+        }
         
         if (_target == null)
         {
@@ -33,6 +37,8 @@ public class PlayerInfoPanelUI : MonoBehaviour
             return;
         }
     }
+    
+    
     
     public void SetTarget(PlayerManager target)
     {
@@ -61,7 +67,7 @@ public class PlayerInfoPanelUI : MonoBehaviour
         _healthSlider.maxValue = _target.Health;
     }
 
-    public void ChangeScore(int score)
+    public void LoadScore(int score)
     {
         _score.text = "SCORE: " + score;
     }

@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class Root : MonoBehaviour
@@ -9,6 +8,8 @@ public class Root : MonoBehaviour
     private MainController _mainController;
     private SoundController _soundController;
 
+    public Context Context => _context;
+
     private void Awake()
     {
         DontDestroyOnLoad(this);
@@ -16,15 +17,21 @@ public class Root : MonoBehaviour
 
     private void Start()
     {
-        _placeForUI = Instantiate(_context.PlaceForUI).transform;
+        _placeForUI = Instantiate(Context.PlaceForUI).transform;
         DontDestroyOnLoad(_placeForUI);
-        _mainController = new MainController(_context, _placeForUI);
-        _soundController = new SoundController(_context);
+        _mainController = new MainController(Context, _placeForUI);
+        _soundController = new SoundController(Context);
 
-        _context.GameModel.SoundModel.OnChangeMute += _soundController.Mute;
-        _context.GameModel.SoundModel.OnChangeVolume += _soundController.ChangeVolume;
-        _context.SaveDataRepository.Load(_context.GameModel.SoundModel);
+        Context.GameModel.SoundModel.OnChangeMute += _soundController.Mute;
+        Context.GameModel.SoundModel.OnChangeVolume += _soundController.ChangeVolume;
+        Context.SaveDataRepository.Load(Context.GameModel.SoundModel);
         
-        _context.GameModel.CurrentState = GameState.MainMenu;
+        Context.GameModel.CurrentState = GameState.MainMenu;
+    }
+
+    private void OnDestroy()
+    {
+        _mainController.Dispose();
+        _mainController = null;
     }
 }

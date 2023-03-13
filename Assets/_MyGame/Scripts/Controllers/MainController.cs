@@ -35,14 +35,14 @@ public sealed class MainController : BaseController
                 _settingMenu = new SettingMenu(_context, _placeForUI);
                 break;
             
-            case GameState.StartGame:
+            case GameState.LoadGame:
                 if(_photonLauncher.IsConnected)
                      return;
                 _photonLauncher.Connect();
-                _context.GameModel.CurrentState = GameState.LoadingGame;
+                _context.GameModel.CurrentState = GameState.GameStarted;
                 break;
             
-            case GameState.LoadingGame:
+            case GameState.GameStarted:
                 _context.GameModel.CurrentState = GameState.Game;
                 break;
             
@@ -77,6 +77,7 @@ public sealed class MainController : BaseController
     {
         _settingMenu?.Dispose();
         _mainMenuController?.Dispose();
+        _gameController?.Dispose();
     }
 
     #endregion 

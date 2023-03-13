@@ -1,4 +1,3 @@
-using Photon.Pun;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
@@ -55,7 +54,7 @@ public class MainMenu : BaseController
 
     private void StartGame()
     {
-        _context.GameModel.CurrentState = GameState.StartGame;
+        _context.GameModel.CurrentState = GameState.LoadGame;
         Debug.Log("Start Game");
     }
 

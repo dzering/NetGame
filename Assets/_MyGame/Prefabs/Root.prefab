@@ -53,6 +53,7 @@ MonoBehaviour:
   _audioSource: {fileID: 0}
   _photonPhotonLauncher: {fileID: 5415046717488622621, guid: 9ea013121968047ac9c4fe81901d2e17, type: 3}
   _playerInfoPanelUI: {fileID: 6740981256325248723, guid: 253bd313b2ac442eeb9b15da7bc0d635, type: 3}
+  _spawner: {fileID: 28144400225182481, guid: 39a2e2bd025ec4970a05b796c3c676d1, type: 3}
 --- !u!114 &7331722108790039982
 MonoBehaviour:
   m_ObjectHideFlags: 0

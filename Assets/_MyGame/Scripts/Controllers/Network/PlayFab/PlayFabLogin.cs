@@ -1,11 +1,8 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using PlayFab;
 using PlayFab.ClientModels;
-using PlayFab.Internal;
-using UnityEditor;
 
 public class PlayFabLogin : TransferData
 {

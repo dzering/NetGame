@@ -1,15 +1,12 @@
-using System;
 using UnityEngine;
 using UnityEngine.Events;
 using System.Collections;
-using UnityEngine.SceneManagement;
-using Photon.Realtime;
 using Photon.Pun;
 using UnityEngine.Serialization;
 
 public class CharacterController2D : MonoBehaviourPun
 {
-	public event Action<float> OnChangeHP; 
+	private PlayerManager _target;
 
 	[SerializeField] private float m_JumpForce = 400f;							// Amount of force added when the player jumps.
 	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;	// How much to smooth out the movement
@@ -62,7 +59,7 @@ public class CharacterController2D : MonoBehaviourPun
 		set
 		{
 			_health = value;
-			OnChangeHP?.Invoke(value);
+			_target.Health = value;
 		}
 	}
 
@@ -147,6 +144,18 @@ public class CharacterController2D : MonoBehaviourPun
 				m_Rigidbody2D.velocity = new Vector2(0, m_Rigidbody2D.velocity.y);
 			}
 		}
+	}
+	
+	public void SetTarget(PlayerManager target)
+	{
+		if (target == null)
+		{
+			Debug.LogError("<Color=Red><a>Missing</a></Color> PlayMakerManager target for PlayerUI.SetTarget.", this);
+			return;
+		}
+		// Cache references for efficiency
+		_target = target;
+		_target.Health = Health;
 	}
 
 
@@ -282,6 +291,9 @@ public class CharacterController2D : MonoBehaviourPun
 
 	public void ApplyDamage(float damage, Vector3 position) 
 	{
+		if(!photonView.IsMine)
+			return;
+		
 		if (!invincible)
 		{
 			animator.SetBool("Hit", true);
@@ -357,7 +369,7 @@ public class CharacterController2D : MonoBehaviourPun
 		yield return new WaitForSeconds(0.4f);
 		m_Rigidbody2D.velocity = new Vector2(0, m_Rigidbody2D.velocity.y);
 		yield return new WaitForSeconds(1.1f);
-		//SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
-		PhotonNetwork.Destroy(this.gameObject);
+		//SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);\\
+		PlayerManager.LocalPlayerInstance.GetComponent<PlayerManager>().IsAlive = false;
 	}
 }

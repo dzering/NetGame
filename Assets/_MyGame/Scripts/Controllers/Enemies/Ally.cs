@@ -1,9 +1,8 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using Photon.Pun;
 using UnityEngine;
 
-public class Ally : MonoBehaviourPun
+public class Ally : EnemyBase
 {
 	private Rigidbody2D m_Rigidbody2D;
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
@@ -275,6 +274,8 @@ public class Ally : MonoBehaviourPun
 		yield return new WaitForSeconds(0.25f);
 		m_Rigidbody2D.velocity = new Vector2(0, m_Rigidbody2D.velocity.y);
 		yield return new WaitForSeconds(1f);
-		Destroy(gameObject);
+
+		Spawner.CreateEnemy(Spawner, IndexPosition);
+		PhotonNetwork.Destroy(gameObject);
 	}
 }

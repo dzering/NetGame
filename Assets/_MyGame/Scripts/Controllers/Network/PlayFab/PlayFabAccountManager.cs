@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Text;
 using PlayFab;
 using PlayFab.ClientModels;
@@ -20,13 +18,29 @@ public class PlayFabAccountManager : MonoBehaviour
     public void Start()
     {
         PlayFabClientAPI.GetAccountInfo(new GetAccountInfoRequest(), OnGetAccountSuccess, OnFailure);
+
     }
+    private void GetUserData(string myPlayFabID)
+    {
+        PlayFabClientAPI.GetUserData(new GetUserDataRequest()
+        {
+            PlayFabId = myPlayFabID,
+            Keys = null},
+            result => {
+                Debug.Log("Got user data:");
+                if (result.Data == null || !result.Data.ContainsKey("Score")) Debug.Log("No Score");
+                else Debug.Log("Score: "+result.Data["Score"].Value);
+            }, (error) => {
+                Debug.Log("Got error retrieving user data:");
+                Debug.Log(error.GenerateErrorReport());
+            });
+    }
+    
 
     private void OnGetAccountSuccess(GetAccountInfoResult result)
     {
         var info = result.AccountInfo.Username;
-        var newString = new StringBuilder($"Name: {info}");
-        info = result.AccountInfo.PlayFabId;
+        var newString = new StringBuilder($"Name: {info}\n");
         newString.AppendLine($"ID: {info}");
 
         _accountInfo = newString.ToString();
