@@ -7,7 +7,7 @@ using UnityEngine;
 public class PlayFabAccountManager : MonoBehaviour
 {
     public event Action<string> OnGetAccountInfo;
-    private string _accountInfo;
+    private string _accountInfo = string.Empty;
 
     public string AccountInfo
     {
@@ -39,12 +39,12 @@ public class PlayFabAccountManager : MonoBehaviour
 
     private void OnGetAccountSuccess(GetAccountInfoResult result)
     {
-        var info = result.AccountInfo.Username;
-        var newString = new StringBuilder($"Name: {info}\n");
-        newString.AppendLine($"ID: {info}");
-
-        _accountInfo = newString.ToString();
-        OnGetAccountInfo?.Invoke(_accountInfo);
+        // var info = result.AccountInfo.Username;
+        // var newString = new StringBuilder($"Name: {info}\n");
+        // newString.AppendLine($"ID: {info}");
+        //
+        // _accountInfo = newString.ToString();
+        // OnGetAccountInfo?.Invoke("");
     }
 
     private void OnFailure(PlayFabError obj)
